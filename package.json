@@ -4,7 +4,8 @@
   "description": "Stageverslag Cyd Stumpel",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+		"start": "nodemon app & nodemon app -e scss -x \"npm run build-css\"",
+		"build-css": "node-sass --include-path scss static/scss/style.scss public/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Sidstumple/stageverslag/issues"
   },
-  "homepage": "https://github.com/Sidstumple/stageverslag#readme"
+  "homepage": "https://github.com/Sidstumple/stageverslag#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "node-sass": "^4.6.0",
+    "router": "^1.3.2"
+  }
 }

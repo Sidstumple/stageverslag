@@ -1,0 +1,16 @@
+<h1>Inhoud</h1>
+<ul>
+	<% chapters.forEach(function(chapter){ %>
+		<% if(chapter.type == 'toc') {%>
+			<li><a href="#<%= chapter.slug%>" style="--slug: <%= chapter.slug%>"><%=chapter.title%></a></li>
+			<%}%>
+			<%})%>
+		</ul>
+		<h2>— Bijlagen</h2>
+		<ul>
+			<% chapters.forEach(function(chapter){ %>
+				<% if(chapter.type == 'bijlage') {%>
+					<li><a href="#<%= chapter.slug%>"><span>—</span><span><%=chapter.title%></span></a></li>
+					<%}%>
+					<%})%>
+				</ul>
