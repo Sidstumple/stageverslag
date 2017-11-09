@@ -1,0 +1,19 @@
+{
+  "name": "stageverslag",
+  "version": "1.0.0",
+  "description": "Stageverslag Cyd Stumpel",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sidstumple/stageverslag.git"
+  },
+  "author": "Cyd Stumpel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sidstumple/stageverslag/issues"
+  },
+  "homepage": "https://github.com/Sidstumple/stageverslag#readme"
+}
