@@ -32,96 +32,120 @@ var scope = {
 		image: 'public/',
 		type: 'toc',
 		color: 'red',
-		size: '10vw'
-
+		columnspan: 'span 1',
+		rowspan: 'span 1',
+		columnstart: '3',
+		rowstart: '1'
 	}, {
 		slug: 'over-matise',
 		title: 'Over Matise',
 		image: 'public/',
 		type: 'toc',
 		color: 'green',
-		size: '15vw'
-
+		columnspan: 'span 3',
+		rowspan: 'span 1',
+		columnstart: '4',
+		rowstart: '1'
 	}, {
 		slug: 'over-mijn-begeleider',
 		title: 'Over mijn begeleider',
 		image: 'public/',
 		type: 'toc',
-		color: 'yellow',
-		size: '15vw'
-
+		color: 'coral',
+		columnspan: 'span 1',
+		rowspan: 'span 1',
+		columnstart: '5',
+		rowstart: '2'
 	}, {
 		slug: 'werkzaamheden',
 		title: 'Werkzaamheden',
 		image: 'public/',
 		type: 'toc',
 		color: 'purple',
-		size: '10vw'
-
+		columnspan: 'span 2',
+		rowspan: 'span 2',
+		columnstart: '3',
+		rowstart: '2'
 	}, {
 		slug: 'leerdoelen',
 		title: 'Leerdoelen',
 		image: 'public/',
 		type: 'toc',
 		color: 'pink',
-		size: '12vw'
-
+		columnspan: 'span 1',
+		rowspan: 'span 2',
+		columnstart: '2',
+		rowstart: '3'
 	}, {
 		slug: 'observatie-opdrachten',
 		title: 'Observatie opdrachten',
 		image: 'public/',
 		type: 'toc',
 		color: 'lime',
-		size: '10vw'
-
+		columnspan: 'span 1',
+		rowspan: 'span 1',
+		columnstart: '6',
+		rowstart: '2'
 	}, {
 		slug: 'analyse-feedbackformulieren',
 		title: 'Analyse feedbackformulieren',
 		image: 'public/',
 		type: 'toc',
 		color: 'teal',
-		size: '15vw'
-
+		columnspan: 'span 2',
+		rowspan: 'span 1',
+		columnstart: '3',
+		rowstart: '4'
 	}, {
 		slug: 'conclusies',
 		title: 'Conclusies',
 		image: 'public/',
 		type: 'toc',
 		color: 'grey',
-		size: '20vw'
-
+		columnspan: 'span 2',
+		rowspan: 'span 2',
+		columnstart: '5',
+		rowstart: '3'
 	}, {
 		slug: 'stageplan',
 		title: 'Stageplan',
 		image: 'public/',
 		type: 'bijlage',
 		color: 'black',
-		size: '12vw'
-
+		columnspan: 'span 1',
+		rowspan: 'span 1',
+		columnstart: '1',
+		rowstart: '5'
 	}, {
 		slug: 'feedbackformulieren',
 		title: 'Feedbackformulieren',
 		image: 'public/',
 		type: 'bijlage',
 		color: 'pink',
-		size: '12vw'
-
+		columnspan: 'span 2',
+		rowspan: 'span 1',
+		columnstart: '2',
+		rowstart: '5'
 	}, {
 		slug: 'producten',
 		title: 'Producten',
 		image: 'public/',
 		type: 'bijlage',
 		color: 'orange',
-		size: '15vw'
-
+		columnspan: 'span 1',
+		rowspan: 'span 1',
+		columnstart: '4',
+		rowstart: '5'
 	}, {
 		slug: 'logboek',
 		title: 'Logboek',
 		image: 'public/',
 		type: 'bijlage',
 		color: 'green',
-		size: '10vw'
-
+		columnspan: 'span 2',
+		rowspan: 'span 2',
+		columnstart: '5',
+		rowstart: '5'
 	}]
 }
 

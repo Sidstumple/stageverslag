@@ -1,3 +1,3 @@
 <% chapters.forEach(function(chapter){ %>
-	<div class="<%=chapter.slug %> showcase--item" style="--color: <%= chapter.color %>; --size: <%= chapter.size %>; --slug: <%= chapter.slug %>;" data-title="<%= chapter.title %>" ></div>
+	<div class="<%=chapter.slug %> showcase--item" style="--color: <%= chapter.color %>; --columnspan: <%= chapter.columnspan %>; --columnstart: <%= chapter.columnstart %>; --rowspan: <%= chapter.rowspan %>; --rowstart: <%= chapter.rowstart %>; --slug: <%= chapter.slug %>;" data-title="<%= chapter.title %>" ></div>
 <%})%>

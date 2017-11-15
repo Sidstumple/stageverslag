@@ -2,6 +2,18 @@
   font-family: "Muli", sans-serif;
   box-sizing: border-box; }
 
+.logo-matise {
+  background: black;
+  width: 7rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 2rem; }
+  .logo-matise img {
+    width: 5rem;
+    height: auto; }
+
 body {
   width: 100vw;
   margin: 0; }
@@ -45,53 +57,51 @@ h2 {
         flex-direction: row; }
         .toc .table-of-contents li a span:first-of-type {
           margin-right: .3rem; }
-  .toc .showcase {
-    width: 70vw;
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    position: absolute;
-    right: 0;
-    bottom: -5px;
-    align-content: stretch; }
-    .toc .showcase--item {
+
+.showcase {
+  display: grid;
+  width: 70vw;
+  height: 100vh;
+  grid-template-columns: repeat(6, minmax(10rem, 1fr));
+  grid-template-rows: repeat(6, 10rem);
+  float: right;
+  grid-gap: 1rem;
+  justify-content: end;
+  align-content: top;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .showcase--item {
+    background: var(--color);
+    position: relative;
+    align-self: stretch;
+    height: 100%;
+    width: 100%;
+    grid-area: var(--rowstart)/var(--columnstart)/var(--rowspan)/var(--columnspan); }
+    .showcase--item:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
       background: var(--color);
-      width: 16vw;
-      height: var(--size);
-      padding-left: 1rem;
-      break-inside: avoid;
-      page-break-inside: avoid;
-      float: right;
-      margin-top: 1.5rem;
-      border-radius: 5px;
-      position: relative;
-      cursor: pointer; }
-      .toc .showcase--item:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: var(--color);
-        transition: .1s; }
-      .toc .showcase--item:hover:before {
-        top: -.3rem;
-        bottom: -.3rem;
-        left: -.3rem;
-        right: -.3rem;
-        border-radius: 5px; }
-      .toc .showcase--item:hover:after {
-        content: attr(data-title);
-        color: white;
-        position: absolute;
-        padding-top: 1rem;
-        font-size: 1rem;
-        height: 100%;
-        box-sizing: border-box;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: .1rem;
-        max-width: 80%; }
+      transition: .1s; }
+    .showcase--item:after {
+      content: attr(data-title);
+      color: white;
+      position: absolute;
+      padding: 1rem;
+      font-size: 1rem;
+      height: 100%;
+      box-sizing: border-box;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      max-width: 80%; }
+    .showcase--item:hover:before {
+      top: -.3rem;
+      bottom: -.3rem;
+      left: -.3rem;
+      right: -.3rem;
+      border-radius: 5px; }
