@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<header class="logo-matise">
-			<img src="static/img/logoWhite.svg" alt="Logo van Matise">
+			<img src="public/img/logoWhite.svg" alt="Logo van Matise">
 		</header>
 		<section class="home">
 			<%- include('home') %>
@@ -21,5 +21,29 @@
 				<%- include('content') %>
 			</article>
 		</section>
+
+		<section class="inleiding content" id="inleiding">
+			<div class="text">
+				<h1>Inleiding</h1>
+				<p>Matise is een redelijk jong bedrijf opgestart door drie vrienden in 2014. Matise maakt bij voorkeur websites van begin tot eind, maar regelt soms ook enkel het design of het technische aspect.
+					Er zijn vier frontend developers bij Matise, twee backend developers, een projectmanager, een creatief strateeg, en twee stagiaires.
+					Alle developers bij Matise zijn ook designer, dat is iets wat Matise uniek maakt. Ze geloven dat om een goede designer te zijn je ook moet weten wat er mogelijk is op gebied van development.
+					Matise heeft verschillende grote en kleinere klanten, waaronder Sony, Schweppes & Audi.</p>
+			</div>
+			<div class="photo" style="background: url('<%= chapters[0].image %>') no-repeat;" id="gather-menu"></div>
+		</section>
+		<section class="over-matise content" id="over-matise">
+			<div class="text">
+				<h1>Over Matise</h1>
+				<p>Matise is een redelijk jong bedrijf opgestart door drie vrienden in 2014. Matise maakt bij voorkeur websites van begin tot eind, maar regelt soms ook enkel het design of het technische aspect.
+					Er zijn vier frontend developers bij Matise, twee backend developers, een projectmanager, een creatief strateeg, en twee stagiaires.
+					Alle developers bij Matise zijn ook designer, dat is iets wat Matise uniek maakt. Ze geloven dat om een goede designer te zijn je ook moet weten wat er mogelijk is op gebied van development.
+					Matise heeft verschillende grote en kleinere klanten, waaronder Sony, Schweppes & Audi.</p>
+			</div>
+			<div class="photo" style="background: url('<%= chapters[1].image %>') no-repeat;"></div>
+		</section>
+		<script src="public/js/epic.js">
+
+		</script>
 	</body>
 </html>

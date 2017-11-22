@@ -29,7 +29,7 @@ var scope = {
 	chapters: [{
 		slug: 'inleiding',
 		title: 'Inleiding',
-		image: 'public/',
+		image: 'public/img/1.jpg',
 		type: 'toc',
 		color: 'red',
 		columnspan: 'span 1',
@@ -39,7 +39,7 @@ var scope = {
 	}, {
 		slug: 'over-matise',
 		title: 'Over Matise',
-		image: 'public/',
+		image: 'public/img/2.jpg',
 		type: 'toc',
 		color: 'green',
 		columnspan: 'span 3',
@@ -49,7 +49,7 @@ var scope = {
 	}, {
 		slug: 'over-mijn-begeleider',
 		title: 'Over mijn begeleider',
-		image: 'public/',
+		image: 'public/img/3.jpg',
 		type: 'toc',
 		color: 'coral',
 		columnspan: 'span 1',
@@ -59,7 +59,7 @@ var scope = {
 	}, {
 		slug: 'werkzaamheden',
 		title: 'Werkzaamheden',
-		image: 'public/',
+		image: 'public/img/4.jpg',
 		type: 'toc',
 		color: 'purple',
 		columnspan: 'span 2',
@@ -69,7 +69,7 @@ var scope = {
 	}, {
 		slug: 'leerdoelen',
 		title: 'Leerdoelen',
-		image: 'public/',
+		image: 'public/img/6.jpg',
 		type: 'toc',
 		color: 'pink',
 		columnspan: 'span 1',
@@ -79,7 +79,7 @@ var scope = {
 	}, {
 		slug: 'observatie-opdrachten',
 		title: 'Observatie opdrachten',
-		image: 'public/',
+		image: 'public/img/7.jpg',
 		type: 'toc',
 		color: 'lime',
 		columnspan: 'span 1',
@@ -89,7 +89,7 @@ var scope = {
 	}, {
 		slug: 'analyse-feedbackformulieren',
 		title: 'Analyse feedbackformulieren',
-		image: 'public/',
+		image: 'public/img/8.jpg',
 		type: 'toc',
 		color: 'teal',
 		columnspan: 'span 2',
@@ -99,17 +99,17 @@ var scope = {
 	}, {
 		slug: 'conclusies',
 		title: 'Conclusies',
-		image: 'public/',
+		image: 'public/img/1.jpg',
 		type: 'toc',
 		color: 'grey',
 		columnspan: 'span 2',
-		rowspan: 'span 2',
+		rowspan: 'span 1',
 		columnstart: '5',
 		rowstart: '3'
 	}, {
 		slug: 'stageplan',
 		title: 'Stageplan',
-		image: 'public/',
+		image: 'public/img/2.jpg',
 		type: 'bijlage',
 		color: 'black',
 		columnspan: 'span 1',
@@ -119,7 +119,7 @@ var scope = {
 	}, {
 		slug: 'feedbackformulieren',
 		title: 'Feedbackformulieren',
-		image: 'public/',
+		image: 'public/img/3.jpg',
 		type: 'bijlage',
 		color: 'pink',
 		columnspan: 'span 2',
@@ -129,7 +129,7 @@ var scope = {
 	}, {
 		slug: 'producten',
 		title: 'Producten',
-		image: 'public/',
+		image: 'public/img/4.jpg',
 		type: 'bijlage',
 		color: 'orange',
 		columnspan: 'span 1',
@@ -139,13 +139,13 @@ var scope = {
 	}, {
 		slug: 'logboek',
 		title: 'Logboek',
-		image: 'public/',
+		image: 'public/img/5.jpg',
 		type: 'bijlage',
 		color: 'green',
 		columnspan: 'span 2',
 		rowspan: 'span 2',
 		columnstart: '5',
-		rowstart: '5'
+		rowstart: '4'
 	}]
 }
 
@@ -157,7 +157,6 @@ app.get('/', function(req, res) {
 	res.render('index', {
 		chapters: scope.chapters
 	}); //renders index.ejs
-
 })
 
 app.listen(3000);

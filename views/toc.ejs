@@ -10,7 +10,7 @@
 		<ul>
 			<% chapters.forEach(function(chapter){ %>
 				<% if(chapter.type == 'bijlage') {%>
-					<li><a href="#<%= chapter.slug%>"><span>—</span><span><%=chapter.title%></span></a></li>
+					<li><a href="#<%= chapter.slug%>"><%=chapter.title%></a></li>
 					<%}%>
 					<%})%>
 				</ul>
