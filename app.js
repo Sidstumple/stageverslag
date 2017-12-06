@@ -29,123 +29,192 @@ var scope = {
 	chapters: [{
 		slug: 'inleiding',
 		title: 'Inleiding',
-		image: 'public/img/1.jpg',
+		image: 'url("public/img/entrepotdok.png") no-repeat',
 		type: 'toc',
-		color: 'red',
+		color: '#52d2c6',
+
 		columnspan: 'span 1',
-		rowspan: 'span 1',
-		columnstart: '3',
-		rowstart: '1'
+		rowspan: 'span 2',
+		columnstart: '2',
+		rowstart: '2',
+
+		smallcolumnspan: 'span 1',
+		smallrowspan: 'span 1',
+		smallrow: '1',
+		smallcolumn: '2'
+
 	}, {
 		slug: 'over-matise',
 		title: 'Over Matise',
-		image: 'public/img/2.jpg',
+		image: 'url("public/img/horse.jpg") no-repeat',
 		type: 'toc',
-		color: 'green',
-		columnspan: 'span 3',
+		color: '#5ebfdd',
+
+		columnspan: 'span 2',
 		rowspan: 'span 1',
-		columnstart: '4',
-		rowstart: '1'
+		columnstart: '3',
+		rowstart: '1',
+
+		smallcolumnspan: 'span 2',
+		smallrowspan: 'span 1',
+		smallrow: '1',
+		smallcolumn: '3'
 	}, {
 		slug: 'over-mijn-begeleider',
 		title: 'Over mijn begeleider',
-		image: 'public/img/3.jpg',
+		image: 'url("public/img/nerf.jpg") no-repeat',
 		type: 'toc',
-		color: 'coral',
+		color: '#aedc78',
+
 		columnspan: 'span 1',
 		rowspan: 'span 1',
 		columnstart: '5',
-		rowstart: '2'
+		rowstart: '1',
+
+		smallcolumnspan: 'span 1',
+		smallrowspan: 'span 1',
+		smallrow: '1',
+		smallcolumn: '5'
 	}, {
 		slug: 'werkzaamheden',
 		title: 'Werkzaamheden',
-		image: 'public/img/4.jpg',
+		image: 'url("public/img/vimn.gif") no-repeat',
 		type: 'toc',
-		color: 'purple',
+		color: '#52d2c6',
+
 		columnspan: 'span 2',
 		rowspan: 'span 2',
-		columnstart: '3',
-		rowstart: '2'
+		columnstart: '1',
+		rowstart: '4',
+
+		smallcolumnspan: 'span 2',
+		smallrowspan: 'span 1',
+		smallrow: '2',
+		smallcolumn: '1'
 	}, {
 		slug: 'leerdoelen',
 		title: 'Leerdoelen',
-		image: 'public/img/6.jpg',
+		image: 'url("public/img/kurk.gif") no-repeat',
 		type: 'toc',
-		color: 'pink',
-		columnspan: 'span 1',
-		rowspan: 'span 2',
-		columnstart: '2',
-		rowstart: '3'
+		color: '#aedc78',
+
+		columnspan: 'span 2',
+		rowspan: 'span 3',
+		columnstart: '4',
+		rowstart: '3',
+
+		smallcolumnspan: 'span 2',
+		smallrowspan: 'span 1',
+		smallrow: '2',
+		smallcolumn: '3'
 	}, {
 		slug: 'observatie-opdrachten',
 		title: 'Observatie opdrachten',
-		image: 'public/img/7.jpg',
+		image: '#52d2c6',
 		type: 'toc',
-		color: 'lime',
+		color: '#5ebfdd',
+
 		columnspan: 'span 1',
-		rowspan: 'span 1',
-		columnstart: '6',
-		rowstart: '2'
+		rowspan: 'span 2',
+		columnstart: '3',
+		rowstart: '2',
+
+		smallcolumnspan: 'span 1',
+		smallrowspan: 'span 1',
+		smallrow: '3',
+		smallcolumn: '1'
 	}, {
 		slug: 'analyse-feedbackformulieren',
 		title: 'Analyse feedbackformulieren',
-		image: 'public/img/8.jpg',
+		image: '#ff9189',
 		type: 'toc',
-		color: 'teal',
+		color: '#aedc78',
+
 		columnspan: 'span 2',
 		rowspan: 'span 1',
-		columnstart: '3',
-		rowstart: '4'
+		columnstart: '4',
+		rowstart: '2',
+
+		smallcolumnspan: 'span 2',
+		smallrowspan: 'span 1',
+		smallrow: '3',
+		smallcolumn: '2',
 	}, {
 		slug: 'conclusies',
 		title: 'Conclusies',
-		image: 'public/img/1.jpg',
+		image: '#c68ad0',
 		type: 'toc',
-		color: 'grey',
-		columnspan: 'span 2',
-		rowspan: 'span 1',
-		columnstart: '5',
-		rowstart: '3'
+		color: '#52d2c6',
+
+		columnspan: 'span 1',
+		rowspan: 'span 2',
+		columnstart: '3',
+		rowstart: '4',
+
+		smallcolumnspan: 'span 1',
+		smallrowspan: 'span 1',
+		smallrow: '3',
+		smallcolumn: '4',
 	}, {
 		slug: 'stageplan',
 		title: 'Stageplan',
-		image: 'public/img/2.jpg',
+		image: '#5ebfdd',
 		type: 'bijlage',
-		color: 'black',
+		color: '#5ebfdd',
 		columnspan: 'span 1',
 		rowspan: 'span 1',
-		columnstart: '1',
-		rowstart: '5'
+		columnstart: '6',
+		rowstart: '2',
+
+		smallcolumnspan: 'span 1',
+		smallrowspan: 'span 1',
+		smallrow: '2',
+		smallcolumn: '5',
 	}, {
 		slug: 'feedbackformulieren',
 		title: 'Feedbackformulieren',
-		image: 'public/img/3.jpg',
+		image: '#ff8095',
 		type: 'bijlage',
-		color: 'pink',
+		color: '#ffcd62',
 		columnspan: 'span 2',
 		rowspan: 'span 1',
 		columnstart: '2',
-		rowstart: '5'
+		rowstart: '4',
+
+		smallcolumnspan: 'span 2',
+		smallrowspan: 'span 1',
+		smallrow: '4',
+		smallcolumn: '1',
 	}, {
 		slug: 'producten',
 		title: 'Producten',
-		image: 'public/img/4.jpg',
+		image: '#ffcd62',
 		type: 'bijlage',
-		color: 'orange',
+		color: '#52d2c6',
 		columnspan: 'span 1',
 		rowspan: 'span 1',
-		columnstart: '4',
-		rowstart: '5'
+		columnstart: '5',
+		rowstart: '3',
+
+		smallcolumnspan: 'span 2',
+		smallrowspan: 'span 1',
+		smallrow: '4',
+		smallcolumn: '3',
 	}, {
 		slug: 'logboek',
 		title: 'Logboek',
-		image: 'public/img/5.jpg',
+		image: '#aedc78',
 		type: 'bijlage',
-		color: 'green',
+		color: '#ffcd62',
 		columnspan: 'span 2',
 		rowspan: 'span 2',
-		columnstart: '5',
-		rowstart: '4'
+		columnstart: '4',
+		rowstart: '4',
+
+		smallcolumnspan: 'span 1',
+		smallrowspan: 'span 2',
+		smallrow: '3',
+		smallcolumn: '5'
 	}]
 }
 

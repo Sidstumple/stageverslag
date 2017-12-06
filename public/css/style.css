@@ -1,14 +1,11 @@
-@charset "UTF-8";
 * {
   font-family: "Muli", sans-serif;
   box-sizing: border-box; }
 
 .logo-matise {
   background: black;
-  width: 10vw;
-  height: 5vw;
-  max-width: 8rem;
-  max-height: 3rem;
+  width: 7.5rem;
+  height: 3.75rem;
   display: flex;
   position: fixed;
   top: 2rem;
@@ -33,29 +30,28 @@ h1, h2, h3 {
   margin: 0; }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 8.33333vw;
   line-height: 1.25; }
   h1 + p, h1 + ul {
     margin-top: 1rem; }
 
 h2 {
-  font-size: 2.5rem;
-  line-height: 1.25; }
+  font-size: 2.08333vw;
+  line-height: 1.25;
+  hyphens: auto; }
 
 .toc {
   position: relative;
   width: 100vw;
   height: 100vh; }
   .toc .table-of-contents {
-    padding: 7vw 5vw 5vw;
-    width: 35vw;
+    padding: 8.33333vw 4.16667vw 4.16667vw;
+    width: 29.16667vw;
     height: 100vh;
     box-sizing: border-box;
     transition: 1s; }
-    .toc .table-of-contents h2 {
-      width: 15rem; }
-      .toc .table-of-contents h2 + ul {
-        margin-left: 2rem; }
+    .toc .table-of-contents h2 + ul {
+      margin-left: 1.38889vw; }
     .toc .table-of-contents ul {
       padding: 0; }
     .toc .table-of-contents li {
@@ -68,22 +64,32 @@ h2 {
         display: flex;
         flex-direction: row;
         position: relative;
-        left: 1.5rem; }
+        left: 1.66667vw;
+        width: max-content; }
         .toc .table-of-contents li a:before {
-          content: '—';
+          content: '';
+          z-index: -1; }
+        .toc .table-of-contents li a:after {
+          content: '';
+          z-index: -1; }
+        .toc .table-of-contents li a:hover:before {
+          border-bottom: 5px solid var(--color);
           position: absolute;
-          left: -1.5rem; }
-        .toc .table-of-contents li a:hover {
-          color: grey; }
-          .toc .table-of-contents li a:hover:before {
-            animation: epic .7s forwards; }
+          top: 50%;
+          left: -1.66667vw;
+          animation: epic .7s forwards;
+          width: 1rem; }
+        .toc .table-of-contents li a:hover:after {
+          border-bottom: 5px solid var(--color);
+          position: absolute;
+          top: 50%;
+          animation: epicRight .3s forwards .3s; }
 
 .showcase {
   display: grid;
   width: 70vw;
   height: 100vh;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 10rem);
+  grid-template: repeat(5, 1fr)/repeat(5, 1fr);
   float: right;
   grid-gap: 1rem;
   justify-content: end;
@@ -98,7 +104,9 @@ h2 {
     height: 100%;
     width: 100%;
     grid-area: var(--rowstart)/var(--columnstart)/var(--rowspan)/var(--columnspan);
-    transition: 1s; }
+    transition: 1s;
+    background-size: cover !important;
+    background-position: center !important; }
     .showcase--item a {
       color: white;
       position: absolute;
@@ -109,14 +117,16 @@ h2 {
       box-sizing: border-box;
       text-decoration: none;
       letter-spacing: .1rem; }
-      .showcase--item a span {
-        position: relative; }
-        .showcase--item a span:before {
+      .showcase--item a h2 {
+        position: relative;
+        text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+        text-align: right; }
+        .showcase--item a h2:before {
           content: '';
           position: absolute;
           height: 0;
           width: 5px;
-          background: teal;
+          background: white;
           transition: 1s; }
     .showcase--item:hover {
       border-radius: 5px; }
@@ -132,27 +142,55 @@ h2 {
 
 .content {
   min-height: 100vh;
-  padding: 7vw 5vw 5vw;
+  padding: 8.33333vw 4.16667vw 4.16667vw;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  position: relative; }
-  .content p {
-    max-width: 25rem;
-    padding-top: 1rem; }
+  flex-direction: column;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto; }
+  .content .text {
+    z-index: 1; }
+    .content .text h1 {
+      position: relative; }
+      .content .text h1:before {
+        content: '';
+        border-bottom: 2.77778vw solid var(--color);
+        position: absolute;
+        z-index: -1;
+        top: 5.55556vw;
+        left: -4.16667vw;
+        right: 41.66667vw; }
+    .content .text p {
+      width: 29.16667vw;
+      padding-top: 1rem;
+      padding-left: 4.16667vw;
+      min-width: 25rem; }
   .content .photo {
-    height: 100vh;
-    width: 60vw;
+    height: 70vh;
+    width: 30vw;
     background-size: cover !important;
+    background-position: center !important;
     position: absolute;
-    top: 0;
-    right: 0; }
+    top: 10vh;
+    right: 5vw; }
+  @media (min-width: 1440px) {
+    .content h1 {
+      font-size: 0.1875rem; } }
 
 @keyframes epic {
   0% {
     left: -2rem; }
   100% {
     left: -1.5rem; } }
+
+@keyframes epicRight {
+  0% {
+    right: 0;
+    width: 0%; }
+  100% {
+    right: -3.5rem;
+    width: 3rem; } }
 
 @keyframes epicborder {
   0% {
@@ -172,7 +210,7 @@ h2 {
 
 @keyframes extendLabel {
   60% {
-    width: 10vw;
+    width: 7.5rem;
     max-width: 8rem; }
   100% {
     width: 40vw;
@@ -200,3 +238,47 @@ h2 {
     z-index: 2rem;
     right: 1rem;
     top: 1rem; } }
+
+@media (max-width: 1190px) {
+  .table-of-contents {
+    display: none; }
+  .showcase {
+    width: 100vw;
+    position: relative; }
+    .showcase--item {
+      grid-area: var(--smallrowstart)/var(--smallcolumnstart)/var(--smallrowspan)/var(--smallcolumnspan);
+      transition: 1s; }
+      .showcase--item a {
+        color: white;
+        position: absolute;
+        padding: 1rem;
+        font-size: 1rem;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        text-decoration: none;
+        letter-spacing: .1rem; }
+        .showcase--item a span {
+          position: relative; }
+          .showcase--item a span:before {
+            content: '';
+            position: absolute;
+            height: 0;
+            width: 5px;
+            background: teal;
+            transition: 1s; }
+      .showcase--item:hover {
+        border-radius: 5px; }
+        .showcase--item:hover a {
+          transition: 1s;
+          background: rgba(0, 0, 0, 0.5);
+          border-radius: 5px; }
+          .showcase--item:hover a span {
+            position: relative;
+            animation: epictext .5s forwards; }
+            .showcase--item:hover a span:before {
+              animation: epicborder .5s forwards; } }
+
+@media (max-width: 700px) {
+  .showcase {
+    display: none; } }

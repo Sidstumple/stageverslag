@@ -2,7 +2,7 @@
 <ul>
 	<% chapters.forEach(function(chapter){ %>
 		<% if(chapter.type == 'toc') {%>
-			<li><a href="#<%= chapter.slug%>" style="--slug: <%= chapter.slug%>"><%=chapter.title%></a></li>
+			<li style="--color: <%= chapter.color %>;"><a href="#<%= chapter.slug%>" style="--slug: <%= chapter.slug%>"><%=chapter.title%></a></li>
 			<%}%>
 			<%})%>
 		</ul>
@@ -10,7 +10,7 @@
 		<ul>
 			<% chapters.forEach(function(chapter){ %>
 				<% if(chapter.type == 'bijlage') {%>
-					<li><a href="#<%= chapter.slug%>"><%=chapter.title%></a></li>
+					<li style="--color: <%= chapter.color %>;"><a href="#<%= chapter.slug%>"><%=chapter.title%></a></li>
 					<%}%>
 					<%})%>
 				</ul>

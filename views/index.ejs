@@ -23,24 +23,27 @@
 		</section>
 
 		<section class="inleiding content" id="inleiding">
-			<div class="text">
+			<div class="text" style="--color: <%= chapters[0].color %>;">
 				<h1>Inleiding</h1>
-				<p>Matise is een redelijk jong bedrijf opgestart door drie vrienden in 2014. Matise maakt bij voorkeur websites van begin tot eind, maar regelt soms ook enkel het design of het technische aspect.
-					Er zijn vier frontend developers bij Matise, twee backend developers, een projectmanager, een creatief strateeg, en twee stagiaires.
-					Alle developers bij Matise zijn ook designer, dat is iets wat Matise uniek maakt. Ze geloven dat om een goede designer te zijn je ook moet weten wat er mogelijk is op gebied van development.
-					Matise heeft verschillende grote en kleinere klanten, waaronder Sony, Schweppes & Audi.</p>
+				<p>De afgelopen zes maanden heb ik stage gelopen bij Matise, een web development bureau aan het Entrepotdok in Amsterdam Oost. </p>
+
+				<p>Ik heb deze maanden bij Matise heel veel geleerd, zoals de, voor mij nieuwe, frameworks SCSS en Angular. Maar ook veel design technieken, zo werken we bij Matise vaak met een specifiek grid waar ook SCSS functies op gebaseerd zijn.</p>
 			</div>
-			<div class="photo" style="background: url('<%= chapters[0].image %>') no-repeat;" id="gather-menu"></div>
+			<div class="photo" style="background: <%= chapters[0].image %>;" id="gather-menu"></div>
 		</section>
 		<section class="over-matise content" id="over-matise">
-			<div class="text">
+			<div class="text" style="--color: <%= chapters[1].color %>;">
 				<h1>Over Matise</h1>
+				<p>Bij Matise werken elf mensen; acht developers, twee strategen en één project manager.
+					We werken voor grote klanten zoals Sony Music, Viacom en Kalkhoff Bikes, maar ook kleinere klanten zoals restaurant Canibale Royale. </p>
+				<p>Oog voor detail en design is essentieel om bij Matise te kunnen werken.</p>
 				<p>Matise is een redelijk jong bedrijf opgestart door drie vrienden in 2014. Matise maakt bij voorkeur websites van begin tot eind, maar regelt soms ook enkel het design of het technische aspect.
 					Er zijn vier frontend developers bij Matise, twee backend developers, een projectmanager, een creatief strateeg, en twee stagiaires.
 					Alle developers bij Matise zijn ook designer, dat is iets wat Matise uniek maakt. Ze geloven dat om een goede designer te zijn je ook moet weten wat er mogelijk is op gebied van development.
 					Matise heeft verschillende grote en kleinere klanten, waaronder Sony, Schweppes & Audi.</p>
 			</div>
-			<div class="photo" style="background: url('<%= chapters[1].image %>') no-repeat;"></div>
+			<div class="photo" style="background: <%= chapters[1].image %>;"></div>
+
 		</section>
 		<script src="public/js/epic.js">
 

@@ -1,3 +1,5 @@
 <% chapters.forEach(function(chapter){ %>
-	<section class="<%=chapter.slug %> showcase--item" style="--color: <%= chapter.color %>; --columnspan: <%= chapter.columnspan %>; --columnstart: <%= chapter.columnstart %>; --rowspan: <%= chapter.rowspan %>; --rowstart: <%= chapter.rowstart %>; --slug: <%= chapter.slug %>; background: url(<%= chapter.image %>);" ><a href="#<%= chapter.slug %>"><span><%= chapter.title %></span></a></section>
+	<% if (chapter.type == 'toc') { %>
+	<section class="<%=chapter.slug %> showcase--item" style="--columnspan: <%= chapter.columnspan %>; --columnstart: <%= chapter.columnstart %>; --rowspan: <%= chapter.rowspan %>; --rowstart: <%= chapter.rowstart %>; --smallrowstart: <%= chapter.smallrow %>; --smallcolumnstart: <%= chapter.smallcolumn %>; --smallcolumnspan: <%= chapter.smallcolumnspan %>; --smallrowspan: <%= chapter.smallrowspan %>; --slug: <%= chapter.slug %>; background: <%= chapter.image%>;" ><a href="#<%= chapter.slug %>"><h2><%= chapter.title %></h2></a></section>
+<% } %>
 <%})%>
