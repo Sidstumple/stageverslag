@@ -8,6 +8,8 @@ sass.render({
 	console.log(err);
 });
 
+
+
 var scope = {
 	// toc: [
 	// 	'Inleiding',
@@ -39,7 +41,7 @@ var scope = {
 		rowstart: '2',
 
 		smallcolumnspan: 'span 1',
-		smallrowspan: 'span 1',
+		smallrowspan: 'span 2',
 		smallrow: '1',
 		smallcolumn: '2'
 
@@ -72,7 +74,7 @@ var scope = {
 		rowstart: '1',
 
 		smallcolumnspan: 'span 1',
-		smallrowspan: 'span 1',
+		smallrowspan: 'span 2',
 		smallrow: '1',
 		smallcolumn: '5'
 	}, {
@@ -88,8 +90,8 @@ var scope = {
 		rowstart: '4',
 
 		smallcolumnspan: 'span 2',
-		smallrowspan: 'span 1',
-		smallrow: '2',
+		smallrowspan: 'span 2',
+		smallrow: '3',
 		smallcolumn: '1'
 	}, {
 		slug: 'leerdoelen',
@@ -104,7 +106,7 @@ var scope = {
 		rowstart: '3',
 
 		smallcolumnspan: 'span 2',
-		smallrowspan: 'span 1',
+		smallrowspan: 'span 2',
 		smallrow: '2',
 		smallcolumn: '3'
 	}, {
@@ -121,8 +123,8 @@ var scope = {
 
 		smallcolumnspan: 'span 1',
 		smallrowspan: 'span 1',
-		smallrow: '3',
-		smallcolumn: '1'
+		smallrow: '4',
+		smallcolumn: '3'
 	}, {
 		slug: 'analyse-feedbackformulieren',
 		title: 'Analyse feedbackformulieren',
@@ -137,8 +139,8 @@ var scope = {
 
 		smallcolumnspan: 'span 2',
 		smallrowspan: 'span 1',
-		smallrow: '3',
-		smallcolumn: '2',
+		smallrow: '4',
+		smallcolumn: '4',
 	}, {
 		slug: 'conclusies',
 		title: 'Conclusies',
@@ -154,7 +156,7 @@ var scope = {
 		smallcolumnspan: 'span 1',
 		smallrowspan: 'span 1',
 		smallrow: '3',
-		smallcolumn: '4',
+		smallcolumn: '5',
 	}, {
 		slug: 'stageplan',
 		title: 'Stageplan',
@@ -224,9 +226,17 @@ app.set('view engine', 'ejs'); //render all htmlvia ejs
 
 app.get('/', function(req, res) {
 	res.render('index', {
-		chapters: scope.chapters
+		chapters: scope.chapters,
+		url: process.env.BROWSER_REFRESH_URL
 	}); //renders index.ejs
 })
 
-app.listen(3000);
-console.log('Starting server at port 3000');
+app.listen(3000, function() {
+	console.log('Starting server at port 3000');
+	if (process.send) {
+		process.send({
+			event: 'online',
+			url: 'http://localhost:3000'
+		});
+	}
+});

@@ -1,0 +1,42 @@
+// left hoverstate on TOC
+@keyframes epicLeft {
+	0%{ left: -2rem}
+	100%{ left: -1.5rem;}
+}
+// right hoverstate on TOC
+@keyframes epicRight {
+	0%{ right: 0; width: 0%;}
+	100%{ right: -3.5rem; width: 3rem}
+}
+
+// pushes showcase text forward on hover
+@keyframes epictext {
+	90%{ left: 0}
+	100%{ left: .5rem;}
+}
+
+// extend menu label
+@keyframes extendLabel {
+	60%{ width: rem(120); max-width: 8rem; }
+	100%{ width: grid(9.6); max-width: none;}
+}
+
+@keyframes menuAnimation {
+	0%{ opacity: 0;}
+	60%{ opacity: 0;}
+	100%{ opacity: 1;}
+}
+
+//menu lines (top & bottom line)
+@keyframes top {
+	60%{ top: auto;}
+	80%{ transform: rotate(0); transform-origin: center;}
+	100%{ transform: rotate(45deg); transform-origin: center; top: 0.4rem;}
+}
+
+@keyframes bottom {
+	0%{ width: 1rem;}
+	60%{ width: 2rem; bottom: auto; }
+	80%{ transform: rotate(0); transform-origin: center; bottom: 0.4rem;}
+	100%{ transform: rotate(-45deg); transform-origin: center; bottom: 0.4rem; width: 2rem;}
+}

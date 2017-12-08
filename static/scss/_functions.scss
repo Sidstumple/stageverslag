@@ -1,0 +1,6 @@
+@function grid($number){
+	@return (100vw/24) * $number;
+}
+@function rem($number){
+	@return $number / 16 * 1rem;
+}

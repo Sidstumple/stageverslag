@@ -4,7 +4,7 @@
   "description": "Stageverslag Cyd Stumpel",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app & nodemon app -e scss -x \"npm run build-css\"",
+    "start": "browser-refresh app & nodemon app -e scss -x \"npm run build-css\"",
     "build-css": "node-sass --include-path scss static/scss/style.scss public/css/style.css"
   },
   "repository": {
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Sidstumple/stageverslag#readme",
   "dependencies": {
+    "browser-refresh": "^1.7.2",
+    "browser-refresh-client": "^1.1.4",
     "ejs": "^2.5.7",
     "express": "^4.16.2",
     "node-sass": "^4.6.0",
