@@ -1,5 +1,5 @@
 .toc{ position: relative; width: grid(24); height: 100vh;
-	.table-of-contents{ padding: grid(80/60) grid(1) grid(1); width: grid(7); height: 100vh; box-sizing: border-box; 
+	.table-of-contents{ padding: grid(80/60) grid(1) grid(1); width: grid(7); height: 100vh; box-sizing: border-box;
 		h2{
 			&+ ul {
 				margin-left: grid(20/60);
@@ -25,7 +25,7 @@
 					a{ color: white;}
 				}
 			}
-			&.show-toc{ display: block; height: 100%; width: grid(9.6);}
+			&.show-toc{ display: block; height: 100%; width: grid(6); top: 0;}
 		}
 	}
 }

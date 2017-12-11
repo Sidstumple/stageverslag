@@ -11,23 +11,6 @@ sass.render({
 
 
 var scope = {
-	// toc: [
-	// 	'Inleiding',
-	// 	'Over Matise',
-	// 	'Over mijn begeleider',
-	// 	'Werkzaamheden',
-	// 	'Leerdoelen',
-	// 	'Observatie opdrachten',
-	// 	'Analyse Feedbackformulieren',
-	// 	'Conclusies'
-	// ],
-	// bijlagen: [
-	// 	'Stageplan',
-	// 	'Feedbackformulieren',
-	// 	'Producten',
-	// 	'Logboek'
-	// ]
-
 	chapters: [{
 		slug: 'inleiding',
 		title: 'Inleiding',
@@ -172,6 +155,21 @@ var scope = {
 		smallrowspan: 'span 1',
 		smallrow: '2',
 		smallcolumn: '5',
+	}, {
+		slug: 'verslag-nulmeting',
+		title: 'Verslag 0-meting',
+		image: '#ff8095',
+		type: 'bijlage',
+		color: '#52d2c6',
+		columnspan: 'span 2',
+		rowspan: 'span 1',
+		columnstart: '2',
+		rowstart: '4',
+
+		smallcolumnspan: 'span 2',
+		smallrowspan: 'span 1',
+		smallrow: '4',
+		smallcolumn: '1',
 	}, {
 		slug: 'feedbackformulieren',
 		title: 'Feedbackformulieren',

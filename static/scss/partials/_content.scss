@@ -1,4 +1,10 @@
-.content { min-height: 100vh; padding: grid(2) grid(1) grid(1);  max-width: 1440px;
+.home{ color: white; min-height: 100vh; background: url('../img/bg.png') no-repeat; background-size: cover; background-position: top right; position: relative; z-index: 2;
+		.information{ background: black;  width: 100%; padding: grid(40/60); position: absolute; bottom: 0; right: 0; display: flex; justify-content: space-evenly; align-items: flex-end;
+	}
+	.bekijk{ background: url('../img/arrow.svg') no-repeat; width: max-content; height: 1.5rem; position: absolute; margin: 0 auto; bottom: 1rem; background-size: 1rem; background-position: center bottom; font-size: 10px; text-transform: uppercase;}
+}
+
+.content{ min-height: 100vh; padding: grid(2) grid(1) grid(1);  max-width: 1440px;
 	.text { z-index: 1;
 		h1{ position: relative;}
 		p{ width: grid(15); padding-top: rem(16); padding-left: grid(1); min-width: rem(400); max-width: rem(800); margin-left: auto; margin-right: auto;}
@@ -8,6 +14,12 @@
 	div:nth-of-type(2){ margin: grid(1) 0 0 grid(1);}
 	}
 	.photo{ background-size: cover !important; background-position: center !important;}
-	.photo-portrait{ height: 70vh; width: 30vw;}
-	.photo-landscape{ height: 80vh; width: 70vw; margin-top: grid(2);}
+	.photo-portrait{ height: 70vh; width: grid(7);}
+	.photo-landscape{ height: 80vh; width: grid(16); margin-top: grid(2);}
+	&.smaller{ width: grid(18); margin-left: grid(6); transition: .1s;
+		.text{
+			h1{ font-size: rem(100);}
+			p{ max-width: rem(600);}
+		}
+	}
 }

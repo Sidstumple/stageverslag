@@ -5,7 +5,7 @@
 		hr{ width: 0; border: none;}
 		&.episch{
 			top: 0; animation: extendLabel .7s forwards;
-			.menu-icon{ animation: menuAnimation .8s forwards; position: absolute; display: flex; justify-content: center; height: 100%; flex-direction: column; right: rem(20);
+			.menu-icon{ animation: menuAnimation .8s forwards; position: absolute; display: flex; justify-content: center; height: 100%; flex-direction: column; right: rem(20); cursor: pointer;
 				hr { width: 1rem; border: white solid 2px; background: white; margin: 0.3rem 0 0.3rem auto; position: relative;
 					&:first-of-type{ width: 2rem; }
 				}

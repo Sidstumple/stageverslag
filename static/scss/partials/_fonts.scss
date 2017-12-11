@@ -3,11 +3,13 @@ h1{ font-size: grid(120/60); line-height: 1.25;
 	& + p, & + ul{ margin-top: grid(1);}
 	@media(min-width: 1440px) { font-size: rem(120)}
 }
-h2{ font-size: grid(30/60); line-height: 1.25; hyphens: auto;
-	@media (max-width: 700px){ font-size: rem(30);}
+h2{ font-size: grid(24/60); line-height: 1.25; hyphens: auto;
+	@media (max-width: 700px){ font-size: rem(24);}
 }
 
 p{ font-size: rem(17); line-height: 1.6;}
 
 
 h1, h2, h3 { margin: 0;}
+
+a{ color: inherit; text-decoration: none;}
