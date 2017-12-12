@@ -6,6 +6,9 @@ h1 {
   @media (min-width: 1440px) {
     h1 {
       font-size: 7.5rem; } }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.875rem; } }
 
 h2 {
   font-size: 1.66667vw;
@@ -15,7 +18,7 @@ h2 {
     h2 {
       font-size: 1.5rem; } }
 
-p {
+p, li {
   font-size: 1.0625rem;
   line-height: 1.6; }
 
@@ -26,9 +29,12 @@ a {
   color: inherit;
   text-decoration: none; }
 
+li {
+  font-weight: bold; }
+
 .logo-matise {
   background: black;
-  width: 7.5rem;
+  width: 10rem;
   height: 3.75rem;
   display: flex;
   position: fixed;
@@ -36,15 +42,21 @@ a {
   z-index: 2;
   transition: 1s; }
   .logo-matise img {
-    width: 6rem;
+    width: 8rem;
     height: auto;
-    padding-left: 2rem; }
+    padding-left: 3.75rem;
+    box-sizing: border-box; }
   .logo-matise hr {
     width: 0;
     border: none; }
   .logo-matise.episch {
     top: 0;
-    animation: extendLabel .7s forwards; }
+    animation: extendLabel .7s forwards;
+    min-width: 18.75rem; }
+    @media (max-width: 600px) {
+      .logo-matise.episch {
+        min-width: 100vw;
+        animation: none; } }
     .logo-matise.episch .menu-icon {
       animation: menuAnimation .8s forwards;
       position: absolute;
@@ -120,7 +132,7 @@ a {
       overflow: hidden; }
       .toc .table-of-contents.gather h1 {
         padding-top: 2rem;
-        font-size: 4.16667vw; }
+        font-size: 3.75rem; }
       .toc .table-of-contents.gather ul {
         margin-top: 2.08333vw; }
         .toc .table-of-contents.gather ul li a {
@@ -129,7 +141,12 @@ a {
         display: block;
         height: 100%;
         width: 25vw;
-        top: 0; }
+        top: 0;
+        min-width: 18.75rem; }
+        @media (max-width: 600px) {
+          .toc .table-of-contents.gather.show-toc {
+            min-width: 100vw;
+            padding: 12.5vw; } }
 
 .showcase {
   display: grid;
@@ -177,9 +194,8 @@ a {
     .showcase--item:hover {
       border-radius: 5px; }
       .showcase--item:hover a {
-        transition: 1s;
-        background: rgba(0, 0, 0, 0.5);
-        border-radius: 5px; }
+        transition: .1s;
+        border-radius: 10px; }
         .showcase--item:hover a h2 {
           position: relative;
           animation: epictext .5s forwards; }
@@ -222,14 +238,15 @@ a {
     z-index: 1; }
     .content .text h1 {
       position: relative; }
-    .content .text p {
-      width: 62.5vw;
+    .content .text p, .content .text li {
+      width: 58.33333vw;
       padding-top: 1rem;
-      padding-left: 4.16667vw;
       min-width: 25rem;
-      max-width: 50rem;
+      max-width: 43.75rem;
       margin-left: auto;
       margin-right: auto; }
+    .content .text li + p {
+      margin-top: 0; }
   .content .collage-1 {
     display: flex;
     margin-top: 8.33333vw; }
@@ -254,6 +271,15 @@ a {
     .content.smaller .text p {
       max-width: 37.5rem; }
 
+.bijlagen {
+  padding: 0 4.16667vw; }
+  .bijlagen.smaller {
+    width: 75vw;
+    margin-left: 20.83333vw;
+    transition: .1s; }
+    .bijlagen.smaller h1 {
+      font-size: 6.25rem; }
+
 @keyframes epicLeft {
   0% {
     left: -2rem; }
@@ -276,11 +302,12 @@ a {
 
 @keyframes extendLabel {
   60% {
-    width: 7.5rem;
-    max-width: 8rem; }
+    width: 10rem;
+    max-width: 10rem; }
   100% {
     width: 25vw;
-    max-width: none; } }
+    max-width: none;
+    min-width: 18.75rem; } }
 
 @keyframes menuAnimation {
   0% {
@@ -324,6 +351,9 @@ a {
 body {
   width: 100vw;
   margin: 0; }
+
+.grey {
+  color: #999; }
 
 @media (max-width: 1190px) {
   .table-of-contents {

@@ -7,7 +7,8 @@
 .content{ min-height: 100vh; padding: grid(2) grid(1) grid(1);  max-width: 1440px;
 	.text { z-index: 1;
 		h1{ position: relative;}
-		p{ width: grid(15); padding-top: rem(16); padding-left: grid(1); min-width: rem(400); max-width: rem(800); margin-left: auto; margin-right: auto;}
+		p, li{ width: grid(14); padding-top: rem(16); min-width: rem(400); max-width: rem(700); margin-left: auto; margin-right: auto;}
+		li + p{ margin-top: 0;}
 	}
 
 	.collage-1{ display: flex; margin-top: grid(2);
@@ -21,5 +22,11 @@
 			h1{ font-size: rem(100);}
 			p{ max-width: rem(600);}
 		}
+	}
+}
+
+.bijlagen { padding: 0 grid(1);
+	&.smaller{ width: grid(18); margin-left: grid(5); transition: .1s;
+			h1{ font-size: rem(100);}
 	}
 }

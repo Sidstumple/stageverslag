@@ -19,13 +19,18 @@
 			}
 		}
 		&.gather{ position: fixed; display: none; background: black; color: white; z-index: 1; height: 3rem; overflow: hidden;
-			h1{ padding-top: 2rem; font-size: grid(1)}
+			h1{ padding-top: 2rem; font-size: rem(60);}
 			ul{ margin-top: grid(.5);
 				li{
 					a{ color: white;}
 				}
 			}
-			&.show-toc{ display: block; height: 100%; width: grid(6); top: 0;}
+			&.show-toc{ display: block; height: 100%; width: grid(6); top: 0; min-width: rem(300);
+				@media (max-width: 600px){
+					min-width: 100vw;
+					padding: grid(3)
+				}
+			}
 		}
 	}
 }

@@ -1,10 +1,13 @@
 .logo-matise {
-	background: black; width: rem(120); height: rem(60); display: flex; position: fixed; top: 2rem; z-index: 2; transition: 1s;
+	background: black; width: rem(160); height: rem(60); display: flex; position: fixed; top: 2rem; z-index: 2; transition: 1s;
 	img{
-		width: 6rem; height: auto; padding-left: 2rem;}
+		width: 8rem; height: auto; padding-left: rem(60); box-sizing: border-box;}
 		hr{ width: 0; border: none;}
 		&.episch{
-			top: 0; animation: extendLabel .7s forwards;
+			top: 0; animation: extendLabel .7s forwards; min-width: rem(300);
+			@media (max-width: 600px){
+				min-width: 100vw; animation: none;
+			}
 			.menu-icon{ animation: menuAnimation .8s forwards; position: absolute; display: flex; justify-content: center; height: 100%; flex-direction: column; right: rem(20); cursor: pointer;
 				hr { width: 1rem; border: white solid 2px; background: white; margin: 0.3rem 0 0.3rem auto; position: relative;
 					&:first-of-type{ width: 2rem; }

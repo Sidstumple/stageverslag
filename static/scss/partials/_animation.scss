@@ -17,8 +17,8 @@
 
 // extend menu label
 @keyframes extendLabel {
-	60%{ width: rem(120); max-width: 8rem; }
-	100%{ width: grid(6); max-width: none;}
+	60%{ width: rem(160); max-width: 10rem; }
+	100%{ width: grid(6); max-width: none; min-width: rem(300);}
 }
 
 @keyframes menuAnimation {
