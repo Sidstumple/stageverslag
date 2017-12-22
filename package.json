@@ -4,7 +4,7 @@
   "description": "Stageverslag Cyd Stumpel",
   "main": "app.js",
   "scripts": {
-		"start": "node app ",
+		"start": "node app",
     "startDev": "browser-refresh app & nodemon app -e scss -x \"npm run build-css\"",
     "build-css": "node-sass --include-path scss static/scss/style.scss public/css/style.css"
   },
@@ -14,6 +14,10 @@
   },
   "author": "Cyd Stumpel",
   "license": "MIT",
+	"engines": {
+	 "node": "v9.2.0",
+	 "npm": "5.5.1"
+ },
   "bugs": {
     "url": "https://github.com/Sidstumple/stageverslag/issues"
   },
