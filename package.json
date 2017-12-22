@@ -4,7 +4,8 @@
   "description": "Stageverslag Cyd Stumpel",
   "main": "app.js",
   "scripts": {
-    "start": "browser-refresh app & nodemon app -e scss -x \"npm run build-css\"",
+		"start": "node app ",
+    "startDev": "browser-refresh app & nodemon app -e scss -x \"npm run build-css\"",
     "build-css": "node-sass --include-path scss static/scss/style.scss public/css/style.css"
   },
   "repository": {
