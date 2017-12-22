@@ -1,5 +1,6 @@
 .home{ color: white; min-height: 100vh; background: url('../img/bg.png') no-repeat; background-size: cover; background-position: top right; position: relative; z-index: 2;
-		.information{ background: black;  width: 100%; padding: grid(40/60); position: absolute; bottom: 0; right: 0; display: flex; justify-content: space-evenly; align-items: flex-end;
+		.information{ background: black;  width: 100%; padding: grid(40/60); position: absolute; bottom: 0; right: 0; display: flex; justify-content: space-evenly; align-items: flex-end; flex-wrap: wrap;
+			.column{ min-width: 15rem; flex-grow: 1; padding: 2rem;}
 	}
 	.bekijk{ background: url('../img/arrow.svg') no-repeat; width: max-content; height: 1.5rem; position: absolute; margin: 0 auto; bottom: 1rem; background-size: 1rem; background-position: center bottom; font-size: 10px; text-transform: uppercase;}
 }
@@ -7,26 +8,62 @@
 .content{ min-height: 100vh; padding: grid(2) grid(1) grid(1);  max-width: 1440px;
 	.text { z-index: 1;
 		h1{ position: relative;}
-		p, li{ width: grid(14); padding-top: rem(16); min-width: rem(400); max-width: rem(700); margin-left: auto; margin-right: auto;}
+		p, li, h3{ width: grid(14); padding-top: rem(16); min-width: rem(400); max-width: rem(700); margin-left: auto; margin-right: auto;}
 		li + p{ margin-top: 0;}
 	}
 
 	.collage-1{ display: flex; margin-top: grid(2);
-	div:nth-of-type(2){ margin: grid(1) 0 0 grid(1);}
 	}
 	.photo{ background-size: cover !important; background-position: center !important;}
-	.photo-portrait{ height: 70vh; width: grid(7);}
+	.photo-portrait{ height: 70vh; width: grid(7);
+		&:nth-of-type(2){ margin: grid(1) 0 0 grid(1);}}
 	.photo-landscape{ height: 80vh; width: grid(16); margin-top: grid(2);}
-	&.smaller{ width: grid(18); margin-left: grid(6); transition: .1s;
-		.text{
-			h1{ font-size: rem(100);}
-			p{ max-width: rem(600);}
+	.slide-controls{ display: none;}
+
+.slide-show{
+	&.collage-1, &.collage-2{ flex-wrap: wrap; position: relative; height: 70vh;}
+	&.collage-2{ margin-top: grid(1);
+		.photo-landscape{ z-index: 1;
+			&.switch{  z-index: 2;}}
+
+	}
+	.photo-landscape{ position: absolute; margin: 0;}
+	.photo-portrait{ width: grid(22); margin: 0 !important; position: absolute;
+		&.switch{  z-index: 2;}
+	}
+	.slide-controls{ display: block; position: relative; left: .7rem; top: .7rem; z-index: 3;
+		div {cursor: pointer;}
+		.previous{ width: 3rem; height: 3rem; background: white; position: absolute;
+		&:before {
+			content: ''; background: url('../img/arrow-black.svg') no-repeat; width: 3rem; height: 3rem;  margin: 0 auto; background-size: 1rem; background-position:  center ;  transform: rotate(45deg); position: absolute;}
+		}
+		.next{ width: 3rem; height: 3rem; background: white; position: absolute; left: 4rem;
+		&:before {
+			content: ''; background: url('../img/arrow-black.svg') no-repeat; width: 3rem; height: 3rem;  margin: 0 auto; background-size: 1rem; background-position:  center ;  transform: rotate(225deg); position: absolute;}
 		}
 	}
 }
 
-.bijlagen { padding: 0 grid(1);
-	&.smaller{ width: grid(18); margin-left: grid(5); transition: .1s;
-			h1{ font-size: rem(100);}
+
+	@media (min-width: 1161px){
+		&.smaller{ width: grid(18); margin-left: grid(6); transition: .1s; hyphens: auto;
+			.text{
+				h1{ font-size: grid(2); }
+				p{ max-width: rem(600);}
+			}
+		}
 	}
+	@media (max-width: 1160px){
+		.photo-portrait{ width: grid(11); }
+	}
+}
+.bijlagen { padding: 0 grid(1);
+	@media (min-width: 1161px){
+		&.smaller{ width: grid(18); margin-left: grid(5); transition: .1s;
+			h1{ font-size: rem(100);}
+		}
+	}
+}
+@media (max-width: 1000px) {
+	.content .photo-landscape{ height: 50vh; width: grid(22);}
 }

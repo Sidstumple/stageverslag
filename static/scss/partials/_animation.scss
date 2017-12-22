@@ -10,9 +10,9 @@
 }
 
 // pushes showcase text forward on hover
-@keyframes epictext {
-	90%{ left: 0}
-	100%{ left: .5rem;}
+@keyframes epicShadow {
+	0%{ box-shadow: none;}
+	100%{ box-shadow: 5px 5px 40px rgba(0,0,0, 0.3); z-index: 1;}
 }
 
 // extend menu label

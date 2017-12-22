@@ -1,14 +1,12 @@
 .showcase { display: grid; width: 70vw; height: 100vh; grid-template: repeat(5, 1fr)/ repeat(5, 1fr); float: right; grid-gap: 1rem; justify-content: end; align-content: top; position: absolute; top: 0; right: 0; padding: 1rem;
-	&--item { position: relative; align-self: stretch; height: 100%; width: 100%; grid-area: var(--rowstart) / var(--columnstart) / var(--rowspan) / var(--columnspan); transition: 1s; background-size: cover !important; background-position: center !important;
+	&--item { position: relative; align-self: stretch; height: 100%; width: 100%; grid-area: var(--rowstart) / var(--columnstart) / var(--rowspan) / var(--columnspan); transition: .1s; background-size: cover !important; background-position: center !important;
 		a{ color: white; position: absolute; padding: 1rem; font-size: 1rem; height: 100%; width: 100%; box-sizing: border-box; text-decoration: none; letter-spacing: .1rem;
 			h2{ position: relative; text-shadow: 1px 1px 20px rgba(0,0,0, 0.2); text-align: right;
 				&:before{ content: ''; position: absolute; height: 0;  width: 5px; background: white; transition: 1s; }
 			}
 		}
-		&:hover{ border-radius: 5px;
+		&:hover{ border-radius: 5px; width: 102%; height: 102%; margin: -1%; animation: epicShadow .5s forwards;
 			a{ transition: .1s; border-radius: 10px;
-				h2{ position: relative; animation: epictext .5s forwards;
-				}
 			}
 		}
 	}

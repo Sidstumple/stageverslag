@@ -4,7 +4,7 @@
 		width: 8rem; height: auto; padding-left: rem(60); box-sizing: border-box;}
 		hr{ width: 0; border: none;}
 		&.episch{
-			top: 0; animation: extendLabel .7s forwards; min-width: rem(300);
+			top: 0; animation: extendLabel .7s forwards; min-width: rem(300); 
 			@media (max-width: 600px){
 				min-width: 100vw; animation: none;
 			}

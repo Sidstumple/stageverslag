@@ -47,7 +47,7 @@ var scope = {
 	}, {
 		slug: 'over-mijn-begeleider',
 		title: 'Over mijn begeleider',
-		image: 'url("public/img/nerf.jpg") no-repeat',
+		image: '#ff9189',
 		type: 'toc',
 		color: '#aedc78',
 
@@ -111,7 +111,7 @@ var scope = {
 	}, {
 		slug: 'analyse-feedbackformulieren',
 		title: 'Analyse feedbackformulieren',
-		image: '#ff9189',
+		image: 'url("public/img/nerf.jpg") no-repeat',
 		type: 'toc',
 		color: '#aedc78',
 
@@ -145,76 +145,31 @@ var scope = {
 		title: 'Stageplan',
 		image: '#5ebfdd',
 		type: 'bijlage',
-		color: '#5ebfdd',
-		columnspan: 'span 1',
-		rowspan: 'span 1',
-		columnstart: '6',
-		rowstart: '2',
-
-		smallcolumnspan: 'span 1',
-		smallrowspan: 'span 1',
-		smallrow: '2',
-		smallcolumn: '5',
+		color: '#5ebfdd'
 	}, {
 		slug: 'verslag-nulmeting',
 		title: 'Verslag 0-meting',
 		image: '#ff8095',
 		type: 'bijlage',
-		color: '#52d2c6',
-		columnspan: 'span 2',
-		rowspan: 'span 1',
-		columnstart: '2',
-		rowstart: '4',
-
-		smallcolumnspan: 'span 2',
-		smallrowspan: 'span 1',
-		smallrow: '4',
-		smallcolumn: '1',
+		color: '#52d2c6'
 	}, {
 		slug: 'feedbackformulieren',
 		title: 'Feedbackformulieren',
 		image: '#ff8095',
 		type: 'bijlage',
-		color: '#ffcd62',
-		columnspan: 'span 2',
-		rowspan: 'span 1',
-		columnstart: '2',
-		rowstart: '4',
-
-		smallcolumnspan: 'span 2',
-		smallrowspan: 'span 1',
-		smallrow: '4',
-		smallcolumn: '1',
+		color: '#ffcd62'
 	}, {
 		slug: 'producten',
 		title: 'Producten',
 		image: '#ffcd62',
 		type: 'bijlage',
-		color: '#52d2c6',
-		columnspan: 'span 1',
-		rowspan: 'span 1',
-		columnstart: '5',
-		rowstart: '3',
-
-		smallcolumnspan: 'span 2',
-		smallrowspan: 'span 1',
-		smallrow: '4',
-		smallcolumn: '3',
+		color: '#52d2c6'
 	}, {
 		slug: 'logboek',
 		title: 'Logboek',
 		image: '#aedc78',
 		type: 'bijlage',
-		color: '#ffcd62',
-		columnspan: 'span 2',
-		rowspan: 'span 2',
-		columnstart: '4',
-		rowstart: '4',
-
-		smallcolumnspan: 'span 1',
-		smallrowspan: 'span 2',
-		smallrow: '3',
-		smallcolumn: '5'
+		color: '#ffcd62'
 	}]
 }
 
