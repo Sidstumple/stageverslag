@@ -27,9 +27,13 @@
 				if (bottom <= 0) {
 					config.toc.classList.add('gather');
 					config.logo.classList.add('episch');
+					if (config.menuOpen.classList.contains('menu-opened')) {
+						screen.smaller();
+					}
 				} else {
 					config.toc.classList.remove('gather');
 					config.logo.classList.remove('episch');
+					screen.larger();
 				}
 			});
 			config.menuOpen.addEventListener('click', function() {
@@ -69,18 +73,19 @@
 
 	var check = {
 		window: function() {
+			//automagically open menu when viewport is wider than 1160px
 			if (window.innerWidth > 1160) {
 				config.menuOpen.classList.toggle('menu-opened');
 				config.toc.classList.add('show-toc');
 				screen.smaller();
-
 			}
+			//replace collage with slideshow when viewport is smaller than 800px
 			if (window.innerWidth < 800) {
 				document.querySelectorAll('.collage-1').forEach(function(collage) {
 					collage.classList.add('slide-show');
-
 				})
 			}
+			//when screen resizes check again for viewport width
 			window.addEventListener('resize', function() {
 				if (window.innerWidth > 1160) {
 					config.menuOpen.classList.toggle('menu-opened');
