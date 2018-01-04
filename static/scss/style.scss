@@ -5,6 +5,8 @@
 @import 'partials/showcase';
 @import 'partials/content';
 @import 'partials/animation';
+@import 'partials/slideshow';
+
 
 
 
@@ -38,3 +40,5 @@ body{ width: grid(24); margin: 0;}
 		&--item{ grid-area: auto;}
 	}
 }
+
+code { font-family: monospace !important; width: auto; padding: 5px; background-color: #eee; padding-bottom: 20px; max-height: 600px; display: inline-block; padding-bottom: 5px;}

@@ -5,7 +5,9 @@ var sass = require('node-sass');
 sass.render({
 	file: 'static/scss/style.scss',
 }, function(err, result) {
-	console.log(err);
+	if (err) {
+		console.log(err);
+	}
 });
 
 
