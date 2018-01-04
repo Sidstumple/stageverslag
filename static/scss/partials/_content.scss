@@ -11,8 +11,8 @@
 		p, li, h3{ width: grid(14); padding-top: rem(16); min-width: rem(400); max-width: rem(700); margin-left: auto; margin-right: auto;}
 		li + p{ margin-top: 0;}
 	}
+	&+.bijlage{ min-height: auto; padding: 0;}
 
-	
 	@media (min-width: 1161px){
 		&.smaller{ width: grid(18); margin-left: grid(6); transition: .1s; hyphens: auto;
 			.text{
