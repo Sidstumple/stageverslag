@@ -119,6 +119,10 @@
 							behavior: 'smooth'
 						});
 					}
+					setTimeout(function() {
+						location.hash = e.target.hash;
+					}, 500)
+
 				})
 			});
 		}
@@ -193,11 +197,9 @@
 						})
 					}
 				});
-
 			});
 		}
 	}
-
 
 	app.init();
 })();

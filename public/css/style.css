@@ -52,7 +52,8 @@ li {
   .logo-matise.episch {
     top: 0;
     animation: extendLabel .7s forwards;
-    min-width: 18.75rem; }
+    min-width: 18.75rem;
+    z-index: 4; }
     @media (max-width: 600px) {
       .logo-matise.episch {
         min-width: 100vw;
@@ -255,6 +256,9 @@ li {
       margin-right: auto; }
     .content .text li + p {
       margin-top: 0; }
+  .content + .bijlage {
+    min-height: auto;
+    padding: 0; }
   @media (min-width: 1161px) {
     .content.smaller {
       width: 75vw;
@@ -441,6 +445,16 @@ li {
 @media (max-width: 1470px) {
   .smaller .triptych .photo-portrait {
     max-height: 31.25rem; } }
+
+footer {
+  background: black;
+  width: 100vw;
+  height: 5rem;
+  margin-top: 12.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 3.75rem; }
 
 * {
   font-family: "Muli", sans-serif;
