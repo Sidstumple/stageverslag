@@ -7,7 +7,7 @@
 		allSections: document.querySelectorAll('section'),
 		allIds: [],
 		smallSlideControls: document.querySelectorAll('.slide-controls.small-controls'),
-		largeSlideControls: document.querySelector('.slide-controls.large-controls')
+		largeSlideControls: document.querySelectorAll('.slide-controls.large-controls')
 	};
 
 	var app = {
@@ -134,65 +134,70 @@
 			});
 		},
 		startLarge: function() {
-			config.largeSlideControls.addEventListener('click', function(e) {
-				if (e.target.classList.contains('next')) {
-					nextSlide();
-				} else {
-					previousSlide();
-				}
-
-				function nextSlide() {
-					var slides = [];
-					for (var i = 0; i < e.target.parentNode.parentNode.children.length; i++) {
-						slides.push(e.target.parentNode.parentNode.children[i]);
+			config.largeSlideControls.forEach(function(largecontrol) {
+				largecontrol.addEventListener('click', function(e) {
+					if (e.target.classList.contains('next')) {
+						nextSlide();
+					} else {
+						previousSlide();
 					}
-					slides.forEach(function(el) {
-						if (el.classList.contains('photo')) {
-							if (el.classList.contains('switch')) {
-								if (el.nextElementSibling.classList.contains('photo')) {
-									setTimeout(function() {
-										el.classList.remove('switch');
-										el.nextElementSibling.classList.add('switch');
-									}, 100);
-								} else {
-									el.classList.remove('switch');
-									e.target.parentNode.parentNode.children[0].classList.add('switch');
-								}
-							}
+
+
+					function nextSlide() {
+						var slides = [];
+						for (var i = 0; i < e.target.parentNode.parentNode.children.length; i++) {
+							slides.push(e.target.parentNode.parentNode.children[i]);
 						}
-					})
-				}
-
-				function previousSlide() {
-					var slides = [];
-					for (var i = 0; i < e.target.parentNode.parentNode.children.length; i++) {
-						slides.push(e.target.parentNode.parentNode.children[i]);
-					}
-					slides.forEach(function(el) {
-						if (el.classList.contains('photo')) {
-							if (el.classList.contains('switch')) {
-								if (el.previousElementSibling) {
-									if (el.previousElementSibling.classList.contains('photo')) {
+						slides.forEach(function(el) {
+							if (el.classList.contains('photo')) {
+								if (el.classList.contains('switch')) {
+									if (el.nextElementSibling.classList.contains('photo')) {
 										setTimeout(function() {
 											el.classList.remove('switch');
-											el.previousElementSibling.classList.add('switch');
+											el.nextElementSibling.classList.add('switch');
 										}, 100);
-									}
-								} else {
-									var number = e.target.parentNode.parentNode.children.length - 2;
-									console.log(number);
-									setTimeout(function() {
-										e.target.parentNode.parentNode.children[number].classList.add('switch');
+									} else {
 										el.classList.remove('switch');
-									}, 100);
+										e.target.parentNode.parentNode.children[0].classList.add('switch');
+									}
 								}
 							}
+						})
+					}
+
+					function previousSlide() {
+						var slides = [];
+						for (var i = 0; i < e.target.parentNode.parentNode.children.length; i++) {
+							slides.push(e.target.parentNode.parentNode.children[i]);
 						}
-					})
-				}
+						slides.forEach(function(el) {
+							if (el.classList.contains('photo')) {
+								if (el.classList.contains('switch')) {
+									if (el.previousElementSibling) {
+										if (el.previousElementSibling.classList.contains('photo')) {
+											setTimeout(function() {
+												el.classList.remove('switch');
+												el.previousElementSibling.classList.add('switch');
+											}, 100);
+										}
+									} else {
+										var number = e.target.parentNode.parentNode.children.length - 2;
+										console.log(number);
+										setTimeout(function() {
+											e.target.parentNode.parentNode.children[number].classList.add('switch');
+											el.classList.remove('switch');
+										}, 100);
+									}
+								}
+							}
+						})
+					}
+				});
+
 			});
 		}
 	}
+
 
 	app.init();
 })();

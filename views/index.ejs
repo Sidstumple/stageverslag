@@ -46,14 +46,16 @@
 	<section class="inleiding content" id="inleiding">
 		<div class="text" style="--color: <%= chapters[0].color %>;">
 			<h1>Inleiding</h1>
-			<p>De afgelopen vijf maanden heb ik stage gelopen bij Matise, <span class="grey">een web-developmentbureau aan het Entrepotdok in Amsterdam Oost</span>. </p>
-
-			<p>Ik heb gekozen om bij Matise stage te lopen omdat ik graag meer wilde leren over web-development en design. Naast nieuwe frameworks zoals Angular en SCSS heb ik ook meer geleerd over waar je op moet letten wanneer je een website ontwerpt. </p>
+			<p>De afgelopen vijf maanden heb ik stage gelopen bij Matise, <span class="grey">een web development bureau aan het Entrepotdok in Amsterdam Oost</span>. </p>
+			<p>Op stagediving van studievereniging IamCore kwam ik bij Matise aan tafel zitten, ze nodigden mij een paar dagen later uit om op gesprek te komen. Ik heb ook nog gesprekken gehad met twee andere web development bedrijven waar ik ook ben uitgenodigd om stage te lopen, ik heb uiteindelijk gekozen voor Matise omdat ik hier de meeste uitdaging zag.</p>
+			<p>Ik heb gekozen om bij Matise stage te lopen omdat ik graag meer wilde leren over web development en design. Naast nieuwe frameworks zoals Angular en SCSS heb ik ook geleerd om met PHP te werken en op een andere manier naar design te kijken. </p>
 		</div>
-		<div class="collage-1">
-			<div class="photo-portrait photo" style="background: url('../public/img/entrepotdok.png');" id="gather-menu"></div>
-			<div class="photo-portrait photo" style="background: url('../public/img/nerf.jpg');" id="gather-menu"></div>
-			<div class="slide-controls small-controls">
+		<div class="collage-1 triptych">
+			<div class="photo-portrait photo switch" style="background: url('../public/img/entrepotdok.png');" id="gather-menu"></div>
+			<div class="photo-portrait photo" style="background: url('../public/img/nerf.jpg');"></div>
+			<div class="photo-portrait photo" style="background: url('../public/img/amsterdam.JPG');"></div>
+
+			<div class="slide-controls large-controls">
 				<div class="previous"></div>
 				<div class="next"></div>
 			</div>
@@ -68,7 +70,14 @@
 				<p>Oog voor detail en design is essentieel om bij Matise te kunnen werken. Naast hard werken drinken we ook vaak een biertje om 16.11uur.</p>
 				<p>Vanuit ons kantoor aan het <span class="grey">Entrepotdok in Amsterdam Oost</span> kijken we uit op de olifanten van Artis. </p>
 			</div>
-			<div class="photo-landscape photo" style="background: url('public/img/bebe.jpg');"></div>
+			<div class="collage-1">
+				<div class="photo-portrait photo" style="background: url('../public/img/bebe.jpg');" ></div>
+				<div class="photo-portrait photo" style="background: url('../public/img/planningsbord.gif');" ></div>
+				<div class="slide-controls small-controls">
+					<div class="previous"></div>
+					<div class="next"></div>
+				</div>
+			</div>
 		</section>
 
 
@@ -93,21 +102,30 @@
 				<section class="werkzaamheden content" id="werkzaamheden">
 					<div class="text" style="--color: <%= chapters[3].color %>;">
 						<h1>Werkzaamheden</h1>
-						<p>Ik heb bij Matise als frontend developer en designer opdrachten meegemaakt. Af en toe werkte ik aan het onderhoud en implementaties van nieuwe functionaliteiten van oudere websites. </p>
+						<p>Ik heb bij Matise als frontend developer en designer opdrachten meegemaakt. Af en toe werkte ik aan het onderhoud en implementaties van nieuwe functionaliteiten van oudere/reeds opgeleverde websites. </p>
 
 						<h3>Planningsbord</h3>
-						<p>Het eerste project dat ik kreeg bij Matise was het planningsbord dat wordt gebruikt om de interne dagplanning op te weergeven </p>
+						<p>Het eerste project dat ik kreeg bij Matise was het <span class="grey">planningsbord</span> dat wordt gebruikt om de interne dagplanning op te weergeven. Dit was gelijk mijn eerste kennismaking met <span class="grey">Angular en SCSS</span>. Het planningsbord begon met een intern onderzoekje, uitgevoerd door een andere stagiare over de behoeftes van Matise. Daar kwamen een aantal voorwaardes uit waaraan het bord moest voldoen. Naar aanleiding daarvan heeft de andere stagiare wireframes gemaakt en toen ik begon met deze stage konden we beginnen aan het design. Daarbij hebben we veel hulp gehad van Tim Borst, de <span class="grey">Design Lead</span> van het bedrijf. Het was een uitdagend ontwerp omdat het voor een portrait scherm ontwikkeld moest worden in plaats van het gebruikelijke landscape.</p>
+						<p>Dit was tevens mijn eerste kennismaking met <span class="grey">het grid</span> dat Matise gebruikt voor designs. Het grid deelt (meestal) de viewport op in 24 kolommen waardoor pagina's makkelijker dynamisch gemaakt kunnen worden.</p>
+						<p>Na een week kon ik beginnen met de development van het bord, ik moest vooral wennen aan de ingebouwde functies van Angular en SCSS. Daarnaast werken we bij Matise op een <span class="grey">BEM methode</span>, terwijl ik op de HvA geleerd heb om zoveel mogelijk op element basis met plain CSS te werken.</p>
+						<p>Het planningsbord was een fijn beginpunt, omdat er geen strenge deadlines aan zaten en ik direct met de eindgebruiker kon praten. Ik vond het ook heel leuk om weer met een API te werken, iets wat ik met de minor Web Development heb geleerd.</p>
+						<p>Een van de handige, maar ook grappige functies van het bord is de connectie met ons Sonos geluidssysteem. We hebben een timer ingesteld die elke maandag om kwart over negen afgaat voor de maandag meeting en de rest van de week elke ochtend om 10uur voor de stand up meeting. Op vrijdagmiddag gaat hij om 11 over 4 ook af om aan te kondigen dat het tijd voor bier is.
+
+						We hebben ook een halve middag volgehouden om Sonos te koppelen aan GitHub, elke keer dat er gepushed werd speelde een fragment van <a href="https://www.youtube.com/watch?v=vCadcBR95oU">Salt-N-Peppa's Push it</a> af. Maar daar werden collega's al snel wat afgeleid van.</p>
 
 						<h3>Sony Music Ticket Chaser</h3>
-						<p>De Sony</p>
+						<p>Voor <span class="grey">Amsterdam Dance Event</span> (ADE) hebben we in opdracht van <span class="grey">Sony Music NL</span> een real time web applicatie gebouwd. In de stijl van DJ's Dimitri Vegas en Like Mike, die optraden tijdens ADE, konden gebruikers in Amsterdam 'live' op zoek naar kaarten.</p>
+						<p>Mijn rol binnen dit project was vrij klein, maar ik heb goed mee kunnen kijken naar de werkwijze van de Developers en Designers van Matise. Ook heb ik een meeting in de A'dam toren (het kantoor van Sony Music NL) meegemaakt, dit was super leerzaam omdat het een gesprek in de afrondende fase van het project was. Er werd goed onderscheid gemaakt tussen wat wel en niet binnen de scope en de krappe tijd van het project pastte. </p>
 
-
-						<p>Voornamelijk heb ik aan een <span class="grey">out of office applicatie</span> voor Viacom gewerkt. Viacom zit achter grote zenders zoals MTV, Nickelodeon & Comedy Central. </p>
+						<h3>Viacom Out of Office Applicatie</h3>
+						<p>Het grootste deel van mijn stage heb ik aan een <span class="grey">out of office applicatie</span> voor Viacom gewerkt. Viacom zit achter grote zenders zoals <span class="grey">MTV, Nickelodeon & Comedy Central</span>, het is een jong, creatief bedrijf en ze wilden iets leuks doen met hun out of office meldingen.</p>
+						<p>Dit was een project dat ik vanaf de conceptfase heb meegemaakt, het idee stond, maar de vorm en eigenschappen nog niet. Ik heb met hulp van collega's Tim en Sil het ontwerp gemaakt, het lastige aan dit project was om zowel de stijl van de zenders als Viacom te behouden. Uiteindelijk hebben we dat geprobeerd uit te drukken in accentkleuren en graphics van series per zender. Naast het ontwerp van de applicatie was het ook nodig om de out of office e-mail te ontwerpen, door de beperkte mogelijkheden van mail HTML was dat ook een hele uitdaging.</p>
+						<p>Na een meeting met de klant over het ontwerp kon ik samen met collega Stephan (backend developer) beginnen aan development. We hebben geprobeerd zoveel mogelijk van de styling met CSS variabeles en Angular te doen waardoor de applicatie super dynamisch is, daardoor kan je in principe vanuit de database alles aanpassen.</p>
 					</div>
 					<div class="collage-2 slide-show">
-						<div class="photo-landscape photo switch" style="background: url(../public/img/vimn.png);"></div>
+						<div class="photo-landscape photo switch" style="background: url(../public/img/planningsbord.png);"></div>
+						<div class="photo-landscape photo " style="background: url(../public/img/vimn.png);"></div>
 						<div class="photo-landscape photo" style="background: url(../public/img/visit.png);"></div>
-						<div class="photo-landscape photo" style="background: url(../public/img/planningsbord.png);"></div>
 
 						<div class="slide-controls large-controls">
 							<div class="previous"></div>
@@ -123,19 +141,28 @@
 						<p>Aan het begin van mijn stage heb ik een aantal leerdoelen opgesteld om de stage meer vorm te geven. Ik heb niet alle leerdoelen behaald zoals ik ze heb opgeschreven maar heb ze wel als leidraad gebruikt.</p>
 						<ol>
 							<li>Toepassen wat ik heb geleerd in de minor Web Development op het bedrijfsleven. Competentie: Maken</li>
-							<p>Ik heb veel van de technieken die ik tijdens mijn minor heb geleerd kunnen toepassen bij Matise. Ik denk dat ik zonder deze minor hier geen stage had kunnen lopen. Ik heb daarnaast ook Matise kunnen vertellen over wat ik bijvoorbeeld heb geleerd over accessiblity op het web.</p>
+							<p>Ik heb veel van de technieken die ik tijdens mijn minor heb geleerd kunnen toepassen bij Matise. Ik denk dat ik zonder deze minor hier geen stage had kunnen lopen. Ik heb daarnaast ook Matise wat kunnen vertellen over wat ik heb geleerd over accessiblity op het web.</p>
+
 							<li>Nieuwe technieken en programmeertalen leren om mij verder te ontwikkelen op gebied van webdevelopment. Competentie: maken & onderzoeken</li>
-							<p>Ik kan nu programmeren in HTML, CSS en Javascript, bij Matise werken ze daarnaast ook met Internet of Things toepassingen, PHP, SCSS en Angular. Ik zal dit leren door veel te vragen en mee te draaien in projecten.</p>
+							<p>Ik heb nieuwe frameworks geleerd zoals Angular en SCSS, ik heb nu meer kennis van de werking van PHP en ik heb met SCSS functies en CSS variables gewerkt. Ik ben heel tevreden over wat ik bij heb geleerd bij Matise.</p>
+
 							<li>Een project van begin tot eind meemaken. Competentie: maken en onderzoeken</li>
-							<p>Het lijkt mij super leerzaam om een project van conceptfase tot livegang mee te maken.</p>
+							<p>Ik heb meerdere projecten van conceptfase tot eind meegemaakt. Wat ik hier vooral van heb opgestoken is dat elke klant anders is. Over het algemeen is het natuurlijk fijner als een klant een minder sterke mening heeft zodat je meer ruimte hebt voor creativiteit, maar soms zorgt zo'n sterke mening ook voor richting en een snellere verloop van een project. </p>
+
 							<li>Meer over backend development leren. Competentie maken en onderzoeken</li>
-							<p>Ik wil graag meer leren over backend development, zodat ik toewerk naar een full stack developer worden. Dit wil Matise ook graag en ik heb al een project waar ik het kan toepassen.</p>
+							<p>Echt pure backend development dingen heb ik niet gedaan, server side scripting zit op het randje van back- & frontend development en daar heb ik wel grote sprongen in gemaak, vooral in het begrijpen van objecten en APIs. </p>
+
 							<li>Communicatie met klanten ervaren. Competentie: onderzoeken</li>
-							<p>Communiceren met klanten is iets waar ik nog niet veel ervaring mee heb. Ik wil graag leren hoe je een complexe technische toepassing vertaalt naar een begrijpbaar verhaal voor de klant.</p>
+							<p>Ik heb bij verschillende klantgesprekken gezeten, zoals onder andere Sony Music NL en Viacom. Bij Matise gaven ze me ook de vrijheid om zelf vragen te stellen en dingen uit te leggen.</p>
 						</ol>
 					</div>
 					<div class="collage-1">
-						<div class="photo-portrait photo" style="background: <%= chapters[1].image %>;"></div>
+						<div class="photo-portrait photo" style="background: url('../public/img/entrepotdok2.jpeg');" id="gather-menu"></div>
+						<div class="photo-portrait photo" style="background: url('../public/img/nerf.jpg');" id="gather-menu"></div>
+						<div class="slide-controls small-controls">
+							<div class="previous"></div>
+							<div class="next"></div>
+						</div>
 					</div>
 				</section>
 
@@ -144,9 +171,11 @@
 						<h1>Observatie opdrachten</h1>
 						<ol>
 							<li>Hoe wordt een project van begin tot eind technisch opgezet?</li>
-							<p>Ik kan dit onderzoek gebruiken voor al mijn leerdoelen, dit zal mij meer inzicht geven in het proces van Matise.</p>
+							<p>Matise werkt met een generator (<code>yo matise</code>), wanneer je dit aanroept in de terminal krijg je de keuze uit verschillende opties om je project in te stellen. <code>yo matise</code> is een project dat altijd in ontwikkeling is en wordt aangepast. Bij Matise wordt voornamelijk gewerkt met Angular, PHP, en SCSS. Sil (Lead Frontend) heeft voor SCSS hele coole functies gemaakt die onder andere het grid mogelijk maken, maar ook dingen kunnen zoals kleuren donkerder of lichter maken. De Angular routes zijn zo goed als kant en klaar neergezet, wat zorgt dat je snel kan opstarten.</p>
+
 							<li>Wat/wie bepaalt wat voor frameworks, programmeertalen en andere technieken er worden gebruikt voor een project?</li>
-							<p>Ik wil dit onderzoeken zodat ik later zelf kan inschatten wat de beste technieken zijn voor een project. Ik ga dit bij meerdere projecten ob- serveren als frontend developer.</p>
+							<p>Per project wordt besloten wat het beste framework is, voor websites waar een CMS bij nodig is wordt voornamelijk Wordpress met PHP gebruikt. </p>
+
 							<li>Wat gebeurt er tijdens de conceptfase?</li>
 							<p>Tijdens de conceptfase wordt er belangrijke besluiten gemaakt voor de voortgang van een project, dit wil ik onderzoeken om mijn derde leerdoel bij te staan.</p>
 							<li>Hoe verloopt contact met klanten, hoe worden ze aangesproken, hoe vaak worden ze om advies gevraagd?</li>
@@ -174,7 +203,12 @@
 								Matise heeft verschillende grote en kleinere klanten, waaronder Sony, Schweppes & Audi.</p>
 							</div>
 							<div class="collage-1">
-								<div class="photo-portrait photo" style="background: <%= chapters[1].image %>;"></div>
+								<div class="photo-portrait photo" style="background: url('../public/img/amsterdam.JPG');" id="gather-menu"></div>
+								<div class="photo-portrait photo" style="background: url('../public/img/ticketchaser.JPG');" id="gather-menu"></div>
+								<div class="slide-controls small-controls">
+									<div class="previous"></div>
+									<div class="next"></div>
+								</div>
 							</div>
 						</section>
 

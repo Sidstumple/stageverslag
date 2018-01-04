@@ -12,39 +12,7 @@
 		li + p{ margin-top: 0;}
 	}
 
-	.collage-1{ display: flex; margin-top: grid(2);
-	}
-	.photo{ background-size: cover !important; background-position: center !important;}
-	.photo-portrait{ height: 70vh; width: grid(7);
-		&:nth-of-type(2){ margin: grid(1) 0 0 grid(1);}}
-	.photo-landscape{ height: 80vh; width: grid(16); margin-top: grid(2);}
-	.slide-controls{ display: none;}
-
-.slide-show{
-	&.collage-1, &.collage-2{ flex-wrap: wrap; position: relative; height: 70vh;}
-	&.collage-2{ margin-top: grid(1);
-		.photo-landscape{ z-index: 1;
-			&.switch{  z-index: 2;}}
-
-	}
-	.photo-landscape{ position: absolute; margin: 0;}
-	.photo-portrait{ width: grid(22); margin: 0 !important; position: absolute;
-		&.switch{  z-index: 2;}
-	}
-	.slide-controls{ display: block; position: relative; left: .7rem; top: .7rem; z-index: 3;
-		div {cursor: pointer;}
-		.previous{ width: 3rem; height: 3rem; background: white; position: absolute;
-		&:before {
-			content: ''; background: url('../img/arrow-black.svg') no-repeat; width: 3rem; height: 3rem;  margin: 0 auto; background-size: 1rem; background-position:  center ;  transform: rotate(45deg); position: absolute;}
-		}
-		.next{ width: 3rem; height: 3rem; background: white; position: absolute; left: 4rem;
-		&:before {
-			content: ''; background: url('../img/arrow-black.svg') no-repeat; width: 3rem; height: 3rem;  margin: 0 auto; background-size: 1rem; background-position:  center ;  transform: rotate(225deg); position: absolute;}
-		}
-	}
-}
-
-
+	
 	@media (min-width: 1161px){
 		&.smaller{ width: grid(18); margin-left: grid(6); transition: .1s; hyphens: auto;
 			.text{
@@ -53,9 +21,7 @@
 			}
 		}
 	}
-	@media (max-width: 1160px){
-		.photo-portrait{ width: grid(11); }
-	}
+
 }
 .bijlagen { padding: 0 grid(1);
 	@media (min-width: 1161px){
@@ -63,7 +29,4 @@
 			h1{ font-size: rem(100);}
 		}
 	}
-}
-@media (max-width: 1000px) {
-	.content .photo-landscape{ height: 50vh; width: grid(22);}
 }
