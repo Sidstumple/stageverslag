@@ -1,4 +1,4 @@
-.toc{ position: relative; width: grid(24); height: 100vh;
+.toc{ position: relative; width: grid(24); height: 100vh; z-index: 3;
 	.table-of-contents{ padding: grid(80/60) grid(1) grid(1); width: grid(7); height: 100vh; box-sizing: border-box;
 		h2{
 			&+ ul {

@@ -112,17 +112,16 @@
 		intoView: function(hashes) {
 			hashes.forEach(function(hashtag) {
 				document.getElementById(hashtag).addEventListener('click', function(e) {
-					e.preventDefault();
 					if (e.target.hash) {
+						e.preventDefault();
 						document.querySelector(e.target.hash).scrollIntoView({
 							block: 'start',
 							behavior: 'smooth'
 						});
+						setTimeout(function() {
+							location.hash = e.target.hash;
+						}, 600);
 					}
-					setTimeout(function() {
-						location.hash = e.target.hash;
-					}, 500)
-
 				})
 			});
 		}

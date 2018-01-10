@@ -22,7 +22,7 @@
 			.photo-portrait{ width: grid(22); margin: 0 !important; position: absolute;
 				&.switch{  z-index: 2;}
 			}
-			.slide-controls{ display: block; position: relative; left: .7rem; top: .7rem; z-index: 3;
+			.slide-controls{ display: block; position: relative; left: .7rem; top: .7rem; z-index: 2;
 				div {cursor: pointer;}
 				.previous{ width: 3rem; height: 3rem; background: white; position: absolute;
 					&:before {

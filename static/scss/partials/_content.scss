@@ -21,12 +21,26 @@
 			}
 		}
 	}
-
 }
-.bijlagen { padding: 0 grid(1);
+.bijlage {
+	p { padding-left: grid(3);}
 	@media (min-width: 1161px){
 		&.smaller{ width: grid(18); margin-left: grid(5); transition: .1s;
 			h1{ font-size: rem(100);}
 		}
 	}
+}
+
+.conclusie.photo{ width: 100%;
+height: rem(600); background-position: right !important;}
+
+@media (max-width: 650px) {
+	.content{
+		.text {
+			h1{ }
+			p, li, h3{ min-width: 100%;}
+			li + p{ }
+		}
+		&+.bijlage{ min-height: auto; padding: 0;}
+}
 }
