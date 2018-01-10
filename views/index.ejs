@@ -22,6 +22,7 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header class="logo-matise">
@@ -43,9 +44,9 @@
 		</article>
 	</section>
 
-	<section class="inleiding content" id="inleiding">
+	<section class="<%= chapters[0].slug %> content" id="<%= chapters[0].slug %>">
 		<div class="text" style="--color: <%= chapters[0].color %>;">
-			<h1>Inleiding</h1>
+			<h1><%= chapters[0].title %></h1>
 			<p>De afgelopen vijf maanden heb ik stage gelopen bij Matise, <span class="grey">een web development bureau aan het Entrepotdok in Amsterdam Oost</span>. </p>
 			<p>Op stagediving van studievereniging IamCore kwam ik bij Matise aan tafel zitten, ze nodigden mij een paar dagen later uit om op gesprek te komen. Ik heb ook nog gesprekken gehad met twee andere web development bedrijven waar ik ook ben uitgenodigd om stage te lopen, ik heb uiteindelijk gekozen voor Matise omdat ik hier de meeste uitdaging zag.</p>
 			<p>Ik heb gekozen om bij Matise stage te lopen omdat ik graag meer wilde leren over web development en design. Naast nieuwe frameworks zoals Angular en SCSS heb ik ook geleerd om met PHP te werken en op een andere manier naar design te kijken. </p>
@@ -62,9 +63,9 @@
 		</div>
 	</section>
 
-	<section class="over-matise content" id="over-matise">
+	<section class="<%= chapters[1].slug %> content" id="<%= chapters[1].slug %>">
 		<div class="text" style="--color: <%= chapters[1].color %>;">
-			<h1>Over Matise</h1>
+			<h1><%= chapters[1].title %></h1>
 			<p>Bij Matise werken tien mensen; <span class="grey">zeven developers, twee strategen en één project manager</span>.
 				We werken voor grote klanten zoals Sony Music, Viacom en Kalkhoff Bikes, maar ook kleinere klanten zoals restaurant Canibale Royale. </p>
 				<p>Oog voor detail en design is essentieel om bij Matise te kunnen werken. Naast hard werken drinken we ook vaak een biertje om 16.11uur.</p>
@@ -82,10 +83,10 @@
 
 
 
-		<section class="over-mijn-begeleider content" id="over-mijn-begeleider">
+		<section class="<%= chapters[2].slug %> content" id="<%= chapters[2].slug %>">
 			<div class="text" style="--color: <%= chapters[2].color %>;">
-				<h1>Over mijn begeleider</h1>
-				<p>Maurits Meester heeft Interactieve Media (de voorloper van Communicatie & Multimedia Design) gestudeerd in Amsterdam, daar begon hij zijn bedrijf 'e-mmer' waar hij kleine websites bouwde. Na zijn studie groeide 'e-mmer' uit tot een bedrijf dat voor verschillende reclame bureaus in en rondom Amsterdam campagnes, online- en mobile applications en zakelijke websites maakte.
+				<h1><%= chapters[2].title %></h1>
+				<p><a href="https://www.linkedin.com/in/mauritsmeester/" target="_blank">Maurits Meester</a> heeft Interactieve Media (de voorloper van Communicatie & Multimedia Design) gestudeerd in Amsterdam, daar begon hij zijn bedrijf 'e-mmer' waar hij kleine websites bouwde. Na zijn studie groeide 'e-mmer' uit tot een bedrijf dat voor verschillende reclame bureaus in en rondom Amsterdam campagnes, online- en mobile applications en zakelijke websites maakte.
 				</p>
 				<p>In 2014 richtte hij samen met Tim en Seb het bedrijf Matise op, ze werkten daarvoor al geruime tijd samen en wilden verder onder één vlag. Maurits is CEO van Matise en full stack developer.</p>
 			</div>
@@ -95,9 +96,9 @@
 		</section>
 
 
-		<section class="werkzaamheden content" id="werkzaamheden">
+		<section class="<%= chapters[3].slug %> content" id="<%= chapters[3].slug %>">
 			<div class="text" style="--color: <%= chapters[3].color %>;">
-				<h1>Werkzaamheden</h1>
+				<h1><%= chapters[3].title %></h1>
 				<p>Ik heb bij Matise als frontend developer en designer opdrachten meegemaakt. Af en toe werkte ik aan het onderhoud en implementaties van nieuwe functionaliteiten van oudere/reeds opgeleverde websites. </p>
 
 				<h3>Planningsbord</h3>
@@ -107,16 +108,18 @@
 				<p>Het planningsbord was een fijn beginpunt, omdat er geen strenge deadlines aan zaten en ik direct met de eindgebruiker kon praten. Ik vond het ook heel leuk om weer met een API te werken, iets wat ik met de minor Web Development heb geleerd.</p>
 				<p>Een van de handige, maar ook grappige functies van het bord is de connectie met ons Sonos geluidssysteem. We hebben een timer ingesteld die elke maandag om kwart over negen afgaat voor de maandag meeting en de rest van de week elke ochtend om 10uur voor de stand up meeting. Op vrijdagmiddag gaat hij om 11 over 4 ook af om aan te kondigen dat het tijd voor bier is.
 
-					We hebben ook een halve middag volgehouden om Sonos te koppelen aan GitHub, elke keer dat er gepushed werd speelde een fragment van <a href="https://www.youtube.com/watch?v=vCadcBR95oU">Salt-N-Peppa's Push it</a> af. Maar daar werden collega's al snel wat afgeleid van.</p>
+					We hebben ook een halve middag volgehouden om Sonos te koppelen aan GitHub, elke keer dat er gepushed werd speelde een fragment van <a href="https://www.youtube.com/watch?v=vCadcBR95oU" target="_blank">Salt-N-Peppa's Push it</a> af. Maar daar werden collega's al snel wat afgeleid van.</p>
 
 					<h3>Sony Music Ticket Chaser</h3>
-					<p>Voor <span class="grey">Amsterdam Dance Event</span> (ADE) hebben we in opdracht van <span class="grey">Sony Music NL</span> een real time web applicatie gebouwd. In de stijl van DJ's Dimitri Vegas en Like Mike, die optraden tijdens ADE, konden gebruikers in Amsterdam 'live' op zoek naar kaarten.</p>
-					<p>Mijn rol binnen dit project was vrij klein, maar ik heb goed mee kunnen kijken naar de werkwijze van de Developers en Designers van Matise. Ook heb ik een meeting in de A'dam toren (het kantoor van Sony Music NL) meegemaakt, dit was super leerzaam omdat het een gesprek in de afrondende fase van het project was. Er werd goed onderscheid gemaakt tussen wat wel en niet binnen de scope en de krappe tijd van het project pastte. </p>
+					<p>Voor <span class="grey">Amsterdam Dance Event</span> (ADE) hebben we in opdracht van <span class="grey">Sony Music NL</span> een <a href="https://ticket-chaser.nl/home" target="_blank">real time web applicatie</a> gebouwd. In de stijl van DJ's Dimitri Vegas en Like Mike, die optraden tijdens ADE, konden gebruikers in Amsterdam 'live' op zoek naar kaarten.</p>
+					<p>Mijn rol binnen dit project was vrij klein, maar ik heb goed mee kunnen kijken naar de werkwijze van de Developers en Designers van Matise. Ook heb ik een meeting in de A'dam toren (het kantoor van Sony Music NL) meegemaakt, dit was super leerzaam omdat het een gesprek in de afrondende fase van het project was. Er werd goed onderscheid gemaakt tussen wat wel en niet binnen de scope en de krappe tijd van het project paste, hierop baseerden wij de voorwaarden voor de afrondende fase.</p>
 
 					<h3>Viacom Out of Office Applicatie</h3>
-					<p>Het grootste deel van mijn stage heb ik aan een <span class="grey">out of office applicatie</span> voor Viacom gewerkt. Viacom zit achter grote zenders zoals <span class="grey">MTV, Nickelodeon & Comedy Central</span>, het is een jong, creatief bedrijf en ze wilden iets leuks doen met hun out of office meldingen.</p>
+					<p>Het grootste deel van mijn stage heb ik aan een <a href="https://www.vimnnordicooo.com/" target="_blank">out of office applicatie</a> (gebruikersnaam: matise, ww: development) voor Viacom gewerkt. Viacom zit achter grote zenders zoals <span class="grey">MTV, Nickelodeon & Comedy Central</span>, het is een jong, creatief bedrijf en ze wilden iets leuks doen met hun out of office meldingen.</p>
 					<p>Dit was een project dat ik vanaf de conceptfase heb meegemaakt, het idee stond, maar de vorm en eigenschappen nog niet. Ik heb met hulp van collega's Tim en Sil het ontwerp gemaakt, het lastige aan dit project was om zowel de stijl van de zenders als Viacom te behouden. Uiteindelijk hebben we dat geprobeerd uit te drukken in accentkleuren en graphics van series per zender. Naast het ontwerp van de applicatie was het ook nodig om de out of office e-mail te ontwerpen, door de beperkte mogelijkheden van mail HTML was dat ook een hele uitdaging.</p>
 					<p>Na een meeting met de klant over het ontwerp kon ik samen met collega Stephan (backend developer) beginnen aan development. We hebben geprobeerd zoveel mogelijk van de styling met CSS variabeles en Angular te doen waardoor de applicatie super dynamisch is, daardoor kan je in principe vanuit de database alles aanpassen.</p>
+					<h3>Visit Aalsmeer</h3>
+					<p>Voor de gemeente Aalsmeer hebben we een <a href="https://www.visitaalsmeer.nl/" target="_blank">website</a> gemaakt voor toeristen die naar Aalsmeer willen. Ik heb bij dit project frontend development gedaan, door het blokken systeem was dit vooral een uitdaging op responsive gebied. Ik ben ook meegegaan naar de launch van de website 'Visit Aalsmeer' met een aantal wethouders en ondernemers in Aalsmeer, dit was echt leuk om mee te maken.</p>
 				</div>
 				<div class="collage-2 slide-show">
 					<div class="photo-landscape photo switch" style="background: url(../public/img/planningsbord.png);"></div>
@@ -131,9 +134,9 @@
 			</section>
 
 
-			<section class="leerdoelen content" id="leerdoelen">
+			<section class="<%= chapters[4].slug %> content" id="<%= chapters[4].slug %>">
 				<div class="text" style="--color: <%= chapters[4].color %>;">
-					<h1>Leerdoelen</h1>
+					<h1><%= chapters[4].title %></h1>
 					<p>Aan het begin van mijn stage heb ik een aantal leerdoelen opgesteld om de stage meer vorm te geven. Ik heb niet alle leerdoelen behaald zoals ik ze heb opgeschreven maar heb ze wel als leidraad gebruikt.</p>
 					<ol>
 						<li>Toepassen wat ik heb geleerd in de minor Web Development op het bedrijfsleven. Competentie: Maken</li>
@@ -162,9 +165,9 @@
 				</div>
 			</section>
 
-			<section class="observatie-opdrachten content" id="observatie-opdrachten">
+			<section class="<%= chapters[5].slug %> content" id="<%= chapters[5].slug %>">
 				<div class="text" style="--color: <%= chapters[5].color %>;">
-					<h1>Observatie opdrachten</h1>
+					<h1><%= chapters[5].title %></h1>
 					<ol>
 						<li>Hoe wordt een project van begin tot eind technisch opgezet?</li>
 						<p>Matise werkt met een generator (<code>yo matise</code>), wanneer je dit aanroept in de terminal krijg je de keuze uit verschillende opties om je project in te stellen. <code>yo matise</code> is een project dat altijd in ontwikkeling is en wordt aangepast. Bij Matise wordt voornamelijk gewerkt met Angular, PHP, en SCSS. Sil (Lead Frontend) heeft voor SCSS hele coole functies gemaakt die onder andere het grid mogelijk maken, maar ook dingen kunnen zoals kleuren donkerder of lichter maken. De Angular routes zijn zo goed als kant en klaar neergezet, wat zorgt dat je snel kan opstarten.</p>
@@ -185,16 +188,10 @@
 
 
 
-			<section class="analyse-feedbackformulieren content" id="analyse-feedbackformulieren">
+			<section class="<%= chapters[6].slug %> content" id="<%= chapters[6].slug %>">
 				<div class="text" style="--color: <%= chapters[6].color %>;">
-					<h1>Analyse feedbackformulieren</h1>
-					<p>Bij Matise werken elf mensen; acht developers, twee strategen en één project manager.
-						We werken voor grote klanten zoals Sony Music, Viacom en Kalkhoff Bikes, maar ook kleinere klanten zoals restaurant Canibale Royale. </p>
-						<p>Oog voor detail en design is essentieel om bij Matise te kunnen werken.</p>
-						<p>Matise is een redelijk jong bedrijf opgestart door drie vrienden in 2014. Matise maakt bij voorkeur websites van begin tot eind, maar regelt soms ook enkel het design of het technische aspect.
-							Er zijn vier frontend developers bij Matise, twee backend developers, een projectmanager, een creatief strateeg, en twee stagiaires.
-							Alle developers bij Matise zijn ook designer, dat is iets wat Matise uniek maakt. Ze geloven dat om een goede designer te zijn je ook moet weten wat er mogelijk is op gebied van development.
-							Matise heeft verschillende grote en kleinere klanten, waaronder Sony, Schweppes & Audi.</p>
+					<h1><%= chapters[6].title %></h1>
+					<p></p>
 						</div>
 						<div class="collage-1">
 							<div class="photo-portrait photo" style="background: url('../public/img/amsterdam.JPG');" id="gather-menu"></div>
@@ -206,20 +203,13 @@
 						</div>
 					</section>
 
-					<section class="conclusies content" id="conclusies">
+					<section class="<%= chapters[7].slug %> content" id="<%= chapters[7].slug %>">
 						<div class="text" style="--color: <%= chapters[7].color %>;">
-							<h1>Conclusies</h1>
-							<p>Bij Matise werken elf mensen; acht developers, twee strategen en één project manager.
-								We werken voor grote klanten zoals Sony Music, Viacom en Kalkhoff Bikes, maar ook kleinere klanten zoals restaurant Canibale Royale. </p>
-								<p>Oog voor detail en design is essentieel om bij Matise te kunnen werken.</p>
-								<p>Matise is een redelijk jong bedrijf opgestart door drie vrienden in 2014. Matise maakt bij voorkeur websites van begin tot eind, maar regelt soms ook enkel het design of het technische aspect.
-									Er zijn vier frontend developers bij Matise, twee backend developers, een projectmanager, een creatief strateeg, en twee stagiaires.
-									Alle developers bij Matise zijn ook designer, dat is iets wat Matise uniek maakt. Ze geloven dat om een goede designer te zijn je ook moet weten wat er mogelijk is op gebied van development.
-									Matise heeft verschillende grote en kleinere klanten, waaronder Sony, Schweppes & Audi.</p>
+							<h1><%= chapters[7].title %></h1>
+							<p>Tijdens mijn stage heb ik veel nieuwe technieken geleerd en goed kunnen zien hoe het eraan toegaat bij een digitaal bureau. Ik ben het meest trots op mijn werk voor Viacom; ik vind het een goed ontwerp en een goede uitvoering, daarnaast is het ook echt een cool product. Ik heb het bij Matise heel erg naar mijn zin en ga daarom ook mijn afstudeeropdracht hier doen.</p>
+							<p>Ik denk dat ik echt een betere developer ben geworden in het afgelopen half jaar en ook gegroeid ben in de kwaliteit van mijn designs. Ik denk dat ik nog veel te leren heb op het gebied van design, SCSS formules, PHP en Angular, maar dat ik een goed begin heb gemaakt.</p>
 								</div>
-								<div class="collage-1">
-									<div class="photo-portrait photo" style="background: <%= chapters[1].image %>;"></div>
-								</div>
+									<div class="conclusie photo" style="background: url('https://media.giphy.com/media/uGNtQrgqfavaU/giphy.gif');"></div>
 							</section>
 
 							<!--  Bijlagen-->
@@ -227,35 +217,15 @@
 								<h1>— Bijlagen</h1>
 								<p>De bijlagen zijn downloadbaar via dropbox, klik op de titel om naar de link te gaan.</p>
 							</section>
-							<section class="stageplan content bijlage" id="stageplan">
-								<div class="text" style="--color: <%= chapters[7].color %>;">
-									<h3>Stageplan</h3>
-								</div>
-							</section>
 
-							<section class="verslag-nulmeting content bijlage" id="verslag-nulmeting">
-								<div class="text" style="--color: <%= chapters[5].color %>;">
-									<h3>Verslag 0-meting</h3>
-								</div>
-							</section>
-
-							<section class="feedbackformulieren content bijlage" id="feedbackformulieren">
-								<div class="text" style="--color: <%= chapters[7].color %>;">
-									<h3>Feedbackformulieren</h3>
-								</div>
-							</section>
-
-							<section class="producten content bijlage" id="producten">
-								<div class="text" style="--color: <%= chapters[7].color %>;">
-									<h3>Producten</h3>
-								</div>
-							</section>
-
-							<section class="logboek content bijlage" id="logboek">
-								<div class="text" style="--color: <%= chapters[7].color %>;">
-									<h3>Logboek</h3>
-								</div>
-							</section>
+							<% chapters.forEach(function(chapter){ %>
+								<% if(chapter.type == 'bijlage') { %>
+								<section class="<%= chapter.slug %> content bijlage" id="stageplan">
+									<div class="text" style="--color: <%= chapter.color %>;">
+										<h3><%= chapter.title %></h3>
+									</div>
+								</section>
+							<%}}) %>
 
 							<footer><p>Stageverslag Cyd Stumpel</p></footer>
 

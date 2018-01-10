@@ -166,12 +166,6 @@ var scope = {
 		image: '#ffcd62',
 		type: 'bijlage',
 		color: '#52d2c6'
-	}, {
-		slug: 'logboek',
-		title: 'Logboek',
-		image: '#aedc78',
-		type: 'bijlage',
-		color: '#ffcd62'
 	}]
 }
 
