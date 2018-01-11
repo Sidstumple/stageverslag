@@ -240,7 +240,8 @@ li {
     background-size: 1rem;
     background-position: center bottom;
     font-size: 10px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: white; }
 
 .content {
   min-height: 100vh;
