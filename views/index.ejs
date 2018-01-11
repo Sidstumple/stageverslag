@@ -47,7 +47,7 @@
 	<section class="<%= chapters[0].slug %> content" id="<%= chapters[0].slug %>">
 		<div class="text" style="--color: <%= chapters[0].color %>;">
 			<h1><%= chapters[0].title %></h1>
-			<p>De afgelopen vijf maanden heb ik stage gelopen bij Matise, <span class="grey">een web development bureau aan het Entrepotdok in Amsterdam Oost</span>. </p>
+			<p>De afgelopen vijf maanden heb ik stage gelopen bij Matise, <span class="grey">een digitaal bureau aan het Entrepotdok in Amsterdam Oost</span>.</p>
 			<p>Op stagediving van studievereniging IamCore kwam ik bij Matise aan tafel zitten, ze nodigden mij een paar dagen later uit om op gesprek te komen. Ik heb ook nog gesprekken gehad met twee andere web development bedrijven waar ik ook ben uitgenodigd om stage te lopen, ik heb uiteindelijk gekozen voor Matise omdat ik hier de meeste uitdaging zag.</p>
 			<p>Ik heb gekozen om bij Matise stage te lopen omdat ik graag meer wilde leren over web development en design. Naast nieuwe frameworks zoals Angular en SCSS heb ik ook geleerd om met PHP te werken en op een andere manier naar design te kijken. </p>
 		</div>
@@ -66,6 +66,7 @@
 	<section class="<%= chapters[1].slug %> content" id="<%= chapters[1].slug %>">
 		<div class="text" style="--color: <%= chapters[1].color %>;">
 			<h1><%= chapters[1].title %></h1>
+			<p>Matise maakt digitale campagnes, websites en apps.</p>
 			<p>Bij Matise werken tien mensen; <span class="grey">zeven developers, twee strategen en één project manager</span>.
 				We werken voor grote klanten zoals Sony Music, Viacom en Kalkhoff Bikes, maar ook kleinere klanten zoals restaurant Canibale Royale. </p>
 				<p>Oog voor detail en design is essentieel om bij Matise te kunnen werken. Naast hard werken drinken we ook vaak een biertje om 16.11uur.</p>
@@ -234,9 +235,5 @@ In het gesprek met mijn stagebegeleider Maurits Meester en mijn stagedocent Laur
 					</section>
 					<%}}) %>
 
-					<footer><p>Stageverslag Cyd Stumpel</p></footer>
 
-					<script src="public/js/epic.js"></script>
-					<script src="<%= url %>"></script>
-				</body>
-				</html>
+		<%- include('footer') %>

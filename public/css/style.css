@@ -362,6 +362,20 @@ li {
     bottom: 0.4rem;
     width: 2rem; } }
 
+@keyframes disco {
+  0% {
+    fill: #52d2c6; }
+  20% {
+    fill: #ff9189; }
+  40% {
+    fill: #5ebfdd; }
+  60% {
+    fill: #aedc78; }
+  80% {
+    fill: #c68ad0; }
+  100% {
+    fill: #ffcd62; } }
+
 .collage-1 {
   display: flex;
   margin-top: 8.33333vw; }
@@ -473,6 +487,11 @@ footer {
   align-items: center;
   padding-right: 3.75rem;
   justify-content: flex-end; }
+  footer svg {
+    width: 12.5rem;
+    height: 1.875rem; }
+    footer svg:hover path {
+      animation: disco infinite 1s; }
 
 * {
   font-family: "Muli", sans-serif;

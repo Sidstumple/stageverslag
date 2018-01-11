@@ -40,3 +40,12 @@
 	80%{ transform: rotate(0); transform-origin: center; bottom: 0.4rem;}
 	100%{ transform: rotate(-45deg); transform-origin: center; bottom: 0.4rem; width: 2rem;}
 }
+
+@keyframes disco {
+	0%{ fill: #52d2c6;}
+	20%{ fill: #ff9189;}
+	40%{ fill: #5ebfdd;}
+	60%{ fill: #aedc78;}
+	80%{ fill: #c68ad0;}
+	100%{ fill: #ffcd62;}
+}

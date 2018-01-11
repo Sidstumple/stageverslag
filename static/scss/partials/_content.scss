@@ -1,6 +1,6 @@
 .home{ color: white; min-height: 100vh; background: url('../img/bg.png') no-repeat; background-size: cover; background-position: top right; position: relative; z-index: 2;
-		.information{ background: black;  width: 100%; padding: grid(40/60); position: absolute; bottom: 0; right: 0; display: flex; justify-content: space-evenly; align-items: flex-end; flex-wrap: wrap;
-			.column{ min-width: 15rem; flex-grow: 1; padding: 2rem;}
+	.information{ background: black;  width: 100%; padding: grid(40/60); position: absolute; bottom: 0; right: 0; display: flex; justify-content: space-evenly; align-items: flex-end; flex-wrap: wrap;
+		.column{ min-width: 15rem; flex-grow: 1; padding: 2rem;}
 	}
 	.bekijk{ background: url('../img/arrow.svg') no-repeat; width: max-content; height: 1.5rem; position: absolute; margin: 0 auto; bottom: 1rem; background-size: 1rem; background-position: center bottom; font-size: 10px; text-transform: uppercase; color: white;}
 }
@@ -32,7 +32,7 @@
 }
 
 .conclusie.photo{ width: 100%;
-height: rem(600); background-position: right !important;}
+	height: rem(600); background-position: right !important;}
 
 @media (max-width: 650px) {
 	.content{
@@ -42,5 +42,5 @@ height: rem(600); background-position: right !important;}
 			li + p{ }
 		}
 		&+.bijlage{ min-height: auto; padding: 0;}
-}
+	}
 }
