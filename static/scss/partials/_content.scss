@@ -14,9 +14,9 @@
 	&+.bijlage{ min-height: auto; padding: 0;}
 
 	@media (min-width: 1161px){
-		&.smaller{ width: grid(18); margin-left: grid(6); transition: .1s; hyphens: auto;
+		&.smaller{ width: grid(18); margin-left: grid(6); transition: .1s;
 			.text{
-				h1{ font-size: grid(2); }
+				h1{ font-size: grid(2); hyphens: auto;}
 				p{ max-width: rem(600);}
 			}
 		}
