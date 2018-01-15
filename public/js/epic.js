@@ -7,7 +7,8 @@
 		allSections: document.querySelectorAll('section'),
 		allIds: [],
 		smallSlideControls: document.querySelectorAll('.slide-controls.small-controls'),
-		largeSlideControls: document.querySelectorAll('.slide-controls.large-controls')
+		largeSlideControls: document.querySelectorAll('.slide-controls.large-controls'),
+		disco: document.getElementById('disco')
 	};
 
 	var app = {
@@ -46,7 +47,13 @@
 					config.toc.classList.remove('show-toc');
 				}
 			});
-
+			config.disco.addEventListener('click', function(e) {
+				console.log('click');
+				document.querySelectorAll('a').forEach(function(discoLink) {
+					console.log(discoLink);
+					discoLink.classList.add('disco');
+				})
+			})
 		},
 		hash: function() {
 			config.allSections.forEach(function(section) {

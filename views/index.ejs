@@ -228,7 +228,7 @@
 
 			<% chapters.forEach(function(chapter){ %>
 				<% if(chapter.type == 'bijlage' && chapter.slug !== 'verslag-nulmeting') { %>
-					<section class="<%= chapter.slug %> content bijlage" id="stageplan">
+					<section class="<%= chapter.slug %> content bijlage" id="<%= chapter.slug %>">
 						<div class="text" style="--color: <%= chapter.color %>;">
 							<h3><a href="<%= chapter.link%>" target="_blank"><%= chapter.title %></a></h3>
 						</div>

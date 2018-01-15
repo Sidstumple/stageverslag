@@ -297,6 +297,9 @@ li {
     min-height: auto;
     padding: 0; } }
 
+.disco:hover {
+  animation: discoLink infinite 1s; }
+
 @keyframes epicLeft {
   0% {
     left: -2rem; }
@@ -375,6 +378,20 @@ li {
     fill: #c68ad0; }
   100% {
     fill: #ffcd62; } }
+
+@keyframes discoLink {
+  0% {
+    color: #52d2c6; }
+  20% {
+    color: #ff9189; }
+  40% {
+    color: #5ebfdd; }
+  60% {
+    color: #aedc78; }
+  80% {
+    color: #c68ad0; }
+  100% {
+    color: #ffcd62; } }
 
 .collage-1 {
   display: flex;
