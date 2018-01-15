@@ -162,7 +162,7 @@ var scope = {
 			image: '#ff8095',
 			type: 'bijlage',
 			color: '#ffcd62',
-			link: ''
+			link: 'https://www.dropbox.com/s/r69uyfnlxh3cees/stage_feedbackformulieren.pdf?dl=0'
 		}
 	]
 }

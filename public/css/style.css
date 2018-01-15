@@ -267,10 +267,10 @@ li {
     .content.smaller {
       width: 75vw;
       margin-left: 25vw;
-      transition: .1s;
-      hyphens: auto; }
+      transition: .1s; }
       .content.smaller .text h1 {
-        font-size: 8.33333vw; }
+        font-size: 8.33333vw;
+        hyphens: auto; }
       .content.smaller .text p {
         max-width: 37.5rem; } }
 
