@@ -1,2 +1,2 @@
 # stageverslag
-Stageverslag Cyd Stumpel
+Stageverslag Cyd Stumpel.
